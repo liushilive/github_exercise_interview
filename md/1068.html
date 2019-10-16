@@ -1,0 +1,697 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>软件测试面试汇总 - 面试题 1068</title>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="" name="description">
+<meta content="刘士" name="author">
+
+<link href="..\../asserts/lsbook/less/website.css" rel="stylesheet">
+<link href="..\../asserts/lsbook/katex/katex.min.css" rel="stylesheet">
+<link href="..\../asserts/lsbook/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+<meta content="true" name="HandheldFriendly"/>
+<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<link href="..\../asserts/lsbook/images/apple-touch-icon-precomposed-152.png"
+      rel="apple-touch-icon-precomposed" sizes="152x152">
+<link href="..\../asserts/lsbook/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<!--分页-->
+<link href="1069.html" rel="next"/>
+</head>
+<body>
+<div class="book"><div class="book-summary">
+    <div id="book-search-input" role="search">
+        <input placeholder="输入并搜索" type="text"/>
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            <li class="header">Summary</li><li class="chapter" data-level="1.1" data-path="../index.html">
+    <a href="../index.html"><b>1.1.</b> 介绍</a>
+</li>
+<li class="header">常规面试题</li><li class="chapter" data-level="2.1" data-path="常规面试题.html">
+    <a href="常规面试题.html"><b>2.1.</b> 常规面试题</a>
+    <ul class="articles">
+    <li class="chapter" data-level="2.1.1" data-path="0001.html">
+    <a href="0001.html"><b>2.1.1.</b> 面试题 0001</a>
+</li>
+<li class="chapter" data-level="2.1.2" data-path="0002.html">
+    <a href="0002.html"><b>2.1.2.</b> 面试题 0002</a>
+</li>
+<li class="chapter" data-level="2.1.3" data-path="0003.html">
+    <a href="0003.html"><b>2.1.3.</b> 面试题 0003</a>
+</li>
+<li class="chapter" data-level="2.1.4" data-path="0004.html">
+    <a href="0004.html"><b>2.1.4.</b> 面试题 0004</a>
+</li>
+<li class="chapter" data-level="2.1.5" data-path="0005.html">
+    <a href="0005.html"><b>2.1.5.</b> 面试题 0005</a>
+</li>
+<li class="chapter" data-level="2.1.6" data-path="0006.html">
+    <a href="0006.html"><b>2.1.6.</b> 面试题 0006</a>
+</li>
+<li class="chapter" data-level="2.1.7" data-path="0007.html">
+    <a href="0007.html"><b>2.1.7.</b> 面试题 0007</a>
+</li>
+<li class="chapter" data-level="2.1.8" data-path="0008.html">
+    <a href="0008.html"><b>2.1.8.</b> 面试题 0008</a>
+</li>
+<li class="chapter" data-level="2.1.9" data-path="0009.html">
+    <a href="0009.html"><b>2.1.9.</b> 面试题 0009</a>
+</li>
+<li class="chapter" data-level="2.1.10" data-path="0010.html">
+    <a href="0010.html"><b>2.1.10.</b> 面试题 0010</a>
+</li>
+<li class="chapter" data-level="2.1.11" data-path="0011.html">
+    <a href="0011.html"><b>2.1.11.</b> 面试题 0011</a>
+</li>
+<li class="chapter" data-level="2.1.12" data-path="0012.html">
+    <a href="0012.html"><b>2.1.12.</b> 面试题 0012</a>
+</li>
+<li class="chapter" data-level="2.1.13" data-path="0013.html">
+    <a href="0013.html"><b>2.1.13.</b> 面试题 0013</a>
+</li>
+<li class="chapter" data-level="2.1.14" data-path="0014.html">
+    <a href="0014.html"><b>2.1.14.</b> 面试题 0014</a>
+</li>
+<li class="chapter" data-level="2.1.15" data-path="0015.html">
+    <a href="0015.html"><b>2.1.15.</b> 面试题 0015</a>
+</li>
+<li class="chapter" data-level="2.1.16" data-path="0016.html">
+    <a href="0016.html"><b>2.1.16.</b> 面试题 0016</a>
+</li>
+<li class="chapter" data-level="2.1.17" data-path="0017.html">
+    <a href="0017.html"><b>2.1.17.</b> 面试题 0017</a>
+</li>
+<li class="chapter" data-level="2.1.18" data-path="0018.html">
+    <a href="0018.html"><b>2.1.18.</b> 面试题 0018</a>
+</li>
+<li class="chapter" data-level="2.1.19" data-path="0019.html">
+    <a href="0019.html"><b>2.1.19.</b> 面试题 0019</a>
+</li>
+<li class="chapter" data-level="2.1.20" data-path="0020.html">
+    <a href="0020.html"><b>2.1.20.</b> 面试题 0020</a>
+</li>
+<li class="chapter" data-level="2.1.21" data-path="0021.html">
+    <a href="0021.html"><b>2.1.21.</b> 面试题 0021</a>
+</li>
+<li class="chapter" data-level="2.1.22" data-path="0022.html">
+    <a href="0022.html"><b>2.1.22.</b> 面试题 0022</a>
+</li>
+<li class="chapter" data-level="2.1.23" data-path="0023.html">
+    <a href="0023.html"><b>2.1.23.</b> 面试题 0023</a>
+</li>
+<li class="chapter" data-level="2.1.24" data-path="0024.html">
+    <a href="0024.html"><b>2.1.24.</b> 面试题 0024</a>
+</li>
+<li class="chapter" data-level="2.1.25" data-path="0025.html">
+    <a href="0025.html"><b>2.1.25.</b> 面试题 0025</a>
+</li>
+<li class="chapter" data-level="2.1.26" data-path="0026.html">
+    <a href="0026.html"><b>2.1.26.</b> 面试题 0026</a>
+</li>
+<li class="chapter" data-level="2.1.27" data-path="0027.html">
+    <a href="0027.html"><b>2.1.27.</b> 面试题 0027</a>
+</li>
+<li class="chapter" data-level="2.1.28" data-path="0028.html">
+    <a href="0028.html"><b>2.1.28.</b> 面试题 0028</a>
+</li>
+<li class="chapter" data-level="2.1.29" data-path="0029.html">
+    <a href="0029.html"><b>2.1.29.</b> 面试题 0029</a>
+</li>
+<li class="chapter" data-level="2.1.30" data-path="0030.html">
+    <a href="0030.html"><b>2.1.30.</b> 面试题 0030</a>
+</li>
+<li class="chapter" data-level="2.1.31" data-path="0031.html">
+    <a href="0031.html"><b>2.1.31.</b> 面试题 0031</a>
+</li>
+<li class="chapter" data-level="2.1.32" data-path="0032.html">
+    <a href="0032.html"><b>2.1.32.</b> 面试题 0032</a>
+</li>
+<li class="chapter" data-level="2.1.33" data-path="0033.html">
+    <a href="0033.html"><b>2.1.33.</b> 面试题 0033</a>
+</li>
+<li class="chapter" data-level="2.1.34" data-path="0034.html">
+    <a href="0034.html"><b>2.1.34.</b> 面试题 0034</a>
+</li>
+<li class="chapter" data-level="2.1.35" data-path="0035.html">
+    <a href="0035.html"><b>2.1.35.</b> 面试题 0035</a>
+</li>
+<li class="chapter" data-level="2.1.36" data-path="0036.html">
+    <a href="0036.html"><b>2.1.36.</b> 面试题 0036</a>
+</li>
+<li class="chapter" data-level="2.1.37" data-path="0037.html">
+    <a href="0037.html"><b>2.1.37.</b> 面试题 0037</a>
+</li>
+<li class="chapter" data-level="2.1.38" data-path="0038.html">
+    <a href="0038.html"><b>2.1.38.</b> 面试题 0038</a>
+</li>
+<li class="chapter" data-level="2.1.39" data-path="0039.html">
+    <a href="0039.html"><b>2.1.39.</b> 面试题 0039</a>
+</li>
+<li class="chapter" data-level="2.1.40" data-path="0040.html">
+    <a href="0040.html"><b>2.1.40.</b> 面试题 0040</a>
+</li>
+<li class="chapter" data-level="2.1.41" data-path="0041.html">
+    <a href="0041.html"><b>2.1.41.</b> 面试题 0041</a>
+</li>
+<li class="chapter" data-level="2.1.42" data-path="0042.html">
+    <a href="0042.html"><b>2.1.42.</b> 面试题 0042</a>
+</li>
+<li class="chapter" data-level="2.1.43" data-path="0043.html">
+    <a href="0043.html"><b>2.1.43.</b> 面试题 0043</a>
+</li>
+<li class="chapter" data-level="2.1.44" data-path="0061.html">
+    <a href="0061.html"><b>2.1.44.</b> 面试题 0044</a>
+</li>
+<li class="chapter" data-level="2.1.45" data-path="0062.html">
+    <a href="0062.html"><b>2.1.45.</b> 面试题 0045</a>
+</li>
+<li class="chapter" data-level="2.1.46" data-path="0063.html">
+    <a href="0063.html"><b>2.1.46.</b> 面试题 0046</a>
+</li>
+<li class="chapter" data-level="2.1.47" data-path="0064.html">
+    <a href="0064.html"><b>2.1.47.</b> 面试题 0047</a>
+</li>
+<li class="chapter" data-level="2.1.48" data-path="0068.html">
+    <a href="0068.html"><b>2.1.48.</b> 面试题 0048</a>
+</li>
+<li class="chapter" data-level="2.1.49" data-path="0069.html">
+    <a href="0069.html"><b>2.1.49.</b> 面试题 0049</a>
+</li>
+<li class="chapter" data-level="2.1.50" data-path="0070.html">
+    <a href="0070.html"><b>2.1.50.</b> 面试题 0050</a>
+</li>
+<li class="chapter" data-level="2.1.51" data-path="0071.html">
+    <a href="0071.html"><b>2.1.51.</b> 面试题 0051</a>
+</li>
+<li class="chapter" data-level="2.1.52" data-path="0072.html">
+    <a href="0072.html"><b>2.1.52.</b> 面试题 0052</a>
+</li>
+<li class="chapter" data-level="2.1.53" data-path="0073.html">
+    <a href="0073.html"><b>2.1.53.</b> 面试题 0053</a>
+</li>
+<li class="chapter" data-level="2.1.54" data-path="0074.html">
+    <a href="0074.html"><b>2.1.54.</b> 面试题 0054</a>
+</li>
+<li class="chapter" data-level="2.1.55" data-path="0075.html">
+    <a href="0075.html"><b>2.1.55.</b> 面试题 0055</a>
+</li>
+<li class="chapter" data-level="2.1.56" data-path="0076.html">
+    <a href="0076.html"><b>2.1.56.</b> 面试题 0056</a>
+</li>
+<li class="chapter" data-level="2.1.57" data-path="0077.html">
+    <a href="0077.html"><b>2.1.57.</b> 面试题 0057</a>
+</li>
+<li class="chapter" data-level="2.1.58" data-path="0078.html">
+    <a href="0078.html"><b>2.1.58.</b> 面试题 0058</a>
+</li>
+<li class="chapter" data-level="2.1.59" data-path="0079.html">
+    <a href="0079.html"><b>2.1.59.</b> 面试题 0059</a>
+</li>
+<li class="chapter" data-level="2.1.60" data-path="0080.html">
+    <a href="0080.html"><b>2.1.60.</b> 面试题 0060</a>
+</li>
+<li class="chapter" data-level="2.1.61" data-path="0081.html">
+    <a href="0081.html"><b>2.1.61.</b> 面试题 0061</a>
+</li>
+<li class="chapter" data-level="2.1.62" data-path="0082.html">
+    <a href="0082.html"><b>2.1.62.</b> 面试题 0062</a>
+</li>
+<li class="chapter" data-level="2.1.63" data-path="0083.html">
+    <a href="0083.html"><b>2.1.63.</b> 面试题 0063</a>
+</li>
+<li class="chapter" data-level="2.1.64" data-path="0084.html">
+    <a href="0084.html"><b>2.1.64.</b> 面试题 0064</a>
+</li>
+<li class="chapter" data-level="2.1.65" data-path="0085.html">
+    <a href="0085.html"><b>2.1.65.</b> 面试题 0065</a>
+</li>
+<li class="chapter" data-level="2.1.66" data-path="0086.html">
+    <a href="0086.html"><b>2.1.66.</b> 面试题 0066</a>
+</li>
+<li class="chapter" data-level="2.1.67" data-path="0087.html">
+    <a href="0087.html"><b>2.1.67.</b> 面试题 0067</a>
+</li>
+<li class="chapter" data-level="2.1.68" data-path="0088.html">
+    <a href="0088.html"><b>2.1.68.</b> 面试题 0068</a>
+</li>
+<li class="chapter" data-level="2.1.69" data-path="0089.html">
+    <a href="0089.html"><b>2.1.69.</b> 面试题 0069</a>
+</li>
+<li class="chapter" data-level="2.1.70" data-path="0090.html">
+    <a href="0090.html"><b>2.1.70.</b> 面试题 0070</a>
+</li>
+<li class="chapter" data-level="2.1.71" data-path="0093.html">
+    <a href="0093.html"><b>2.1.71.</b> 面试题 0071</a>
+</li>
+<li class="chapter" data-level="2.1.72" data-path="0094.html">
+    <a href="0094.html"><b>2.1.72.</b> 面试题 0072</a>
+</li>
+<li class="chapter" data-level="2.1.73" data-path="0095.html">
+    <a href="0095.html"><b>2.1.73.</b> 面试题 0073</a>
+</li>
+<li class="chapter" data-level="2.1.74" data-path="0096.html">
+    <a href="0096.html"><b>2.1.74.</b> 面试题 0074</a>
+</li>
+<li class="chapter" data-level="2.1.75" data-path="0097.html">
+    <a href="0097.html"><b>2.1.75.</b> 面试题 0075</a>
+</li>
+<li class="chapter" data-level="2.1.76" data-path="0098.html">
+    <a href="0098.html"><b>2.1.76.</b> 面试题 0076</a>
+</li>
+<li class="chapter" data-level="2.1.77" data-path="0099.html">
+    <a href="0099.html"><b>2.1.77.</b> 面试题 0077</a>
+</li>
+<li class="chapter" data-level="2.1.78" data-path="0100.html">
+    <a href="0100.html"><b>2.1.78.</b> 面试题 0078</a>
+</li>
+<li class="chapter" data-level="2.1.79" data-path="0101.html">
+    <a href="0101.html"><b>2.1.79.</b> 面试题 0079</a>
+</li>
+<li class="chapter" data-level="2.1.80" data-path="0102.html">
+    <a href="0102.html"><b>2.1.80.</b> 面试题 0080</a>
+</li>
+<li class="chapter" data-level="2.1.81" data-path="0103.html">
+    <a href="0103.html"><b>2.1.81.</b> 面试题 0081</a>
+</li>
+<li class="chapter" data-level="2.1.82" data-path="0104.html">
+    <a href="0104.html"><b>2.1.82.</b> 面试题 0072</a>
+</li>
+<li class="chapter" data-level="2.1.83" data-path="0106.html">
+    <a href="0106.html"><b>2.1.83.</b> 面试题 0083</a>
+</li>
+<li class="chapter" data-level="2.1.84" data-path="0107.html">
+    <a href="0107.html"><b>2.1.84.</b> 面试题 0084</a>
+</li>
+<li class="chapter" data-level="2.1.85" data-path="0111.html">
+    <a href="0111.html"><b>2.1.85.</b> 面试题 0085</a>
+</li>
+<li class="chapter" data-level="2.1.86" data-path="0114.html">
+    <a href="0114.html"><b>2.1.86.</b> 面试题 0086</a>
+</li>
+<li class="chapter" data-level="2.1.87" data-path="0117.html">
+    <a href="0117.html"><b>2.1.87.</b> 面试题 0087</a>
+</li>
+<li class="chapter" data-level="2.1.88" data-path="0118.html">
+    <a href="0118.html"><b>2.1.88.</b> 面试题 0088</a>
+</li>
+<li class="chapter" data-level="2.1.89" data-path="0119.html">
+    <a href="0119.html"><b>2.1.89.</b> 面试题 0089</a>
+</li>
+<li class="chapter" data-level="2.1.90" data-path="0124.html">
+    <a href="0124.html"><b>2.1.90.</b> 面试题 0190</a>
+</li>
+<li class="chapter" data-level="2.1.91" data-path="0125.html">
+    <a href="0125.html"><b>2.1.91.</b> 面试题 0191</a>
+</li>
+<li class="chapter" data-level="2.1.92" data-path="0126.html">
+    <a href="0126.html"><b>2.1.92.</b> 面试题 0192</a>
+</li>
+<li class="chapter" data-level="2.1.93" data-path="0127.html">
+    <a href="0127.html"><b>2.1.93.</b> 面试题 0193</a>
+</li>
+<li class="chapter" data-level="2.1.94" data-path="0128.html">
+    <a href="0128.html"><b>2.1.94.</b> 面试题 0194</a>
+</li>
+<li class="chapter" data-level="2.1.95" data-path="0060.html">
+    <a href="0060.html"><b>2.1.95.</b> 面试题 0195</a>
+</li>
+
+    </ul>
+</li>
+<li class="header">自动化面试题</li><li class="chapter" data-level="3.1" data-path="自动化面试题.html">
+    <a href="自动化面试题.html"><b>3.1.</b> 自动化面试题</a>
+    <ul class="articles">
+    <li class="chapter" data-level="3.1.1" data-path="1001.html">
+    <a href="1001.html"><b>3.1.1.</b> 面试题 1001</a>
+</li>
+<li class="chapter" data-level="3.1.2" data-path="1002.html">
+    <a href="1002.html"><b>3.1.2.</b> 面试题 1002</a>
+</li>
+<li class="chapter" data-level="3.1.3" data-path="1003.html">
+    <a href="1003.html"><b>3.1.3.</b> 面试题 1003</a>
+</li>
+<li class="chapter" data-level="3.1.4" data-path="1004.html">
+    <a href="1004.html"><b>3.1.4.</b> 面试题 1004</a>
+</li>
+<li class="chapter" data-level="3.1.5" data-path="1005.html">
+    <a href="1005.html"><b>3.1.5.</b> 面试题 1005</a>
+</li>
+<li class="chapter" data-level="3.1.6" data-path="1006.html">
+    <a href="1006.html"><b>3.1.6.</b> 面试题 1006</a>
+</li>
+<li class="chapter" data-level="3.1.7" data-path="1007.html">
+    <a href="1007.html"><b>3.1.7.</b> 面试题 1007</a>
+</li>
+<li class="chapter" data-level="3.1.8" data-path="1008.html">
+    <a href="1008.html"><b>3.1.8.</b> 面试题 1008</a>
+</li>
+<li class="chapter" data-level="3.1.9" data-path="1009.html">
+    <a href="1009.html"><b>3.1.9.</b> 面试题 1009</a>
+</li>
+<li class="chapter" data-level="3.1.10" data-path="1010.html">
+    <a href="1010.html"><b>3.1.10.</b> 面试题 1010</a>
+</li>
+<li class="chapter" data-level="3.1.11" data-path="1011.html">
+    <a href="1011.html"><b>3.1.11.</b> 面试题 1011</a>
+</li>
+<li class="chapter" data-level="3.1.12" data-path="1012.html">
+    <a href="1012.html"><b>3.1.12.</b> 面试题 1012</a>
+</li>
+<li class="chapter" data-level="3.1.13" data-path="1013.html">
+    <a href="1013.html"><b>3.1.13.</b> 面试题 1013</a>
+</li>
+<li class="chapter" data-level="3.1.14" data-path="1014.html">
+    <a href="1014.html"><b>3.1.14.</b> 面试题 1014</a>
+</li>
+<li class="chapter" data-level="3.1.15" data-path="1015.html">
+    <a href="1015.html"><b>3.1.15.</b> 面试题 1015</a>
+</li>
+<li class="chapter" data-level="3.1.16" data-path="1016.html">
+    <a href="1016.html"><b>3.1.16.</b> 面试题 1016</a>
+</li>
+<li class="chapter" data-level="3.1.17" data-path="1017.html">
+    <a href="1017.html"><b>3.1.17.</b> 面试题 1017</a>
+</li>
+<li class="chapter" data-level="3.1.18" data-path="1018.html">
+    <a href="1018.html"><b>3.1.18.</b> 面试题 1018</a>
+</li>
+<li class="chapter" data-level="3.1.19" data-path="1019.html">
+    <a href="1019.html"><b>3.1.19.</b> 面试题 1019</a>
+</li>
+<li class="chapter" data-level="3.1.20" data-path="1020.html">
+    <a href="1020.html"><b>3.1.20.</b> 面试题 1020</a>
+</li>
+<li class="chapter" data-level="3.1.21" data-path="1021.html">
+    <a href="1021.html"><b>3.1.21.</b> 面试题 1021</a>
+</li>
+<li class="chapter" data-level="3.1.22" data-path="1022.html">
+    <a href="1022.html"><b>3.1.22.</b> 面试题 1022</a>
+</li>
+<li class="chapter" data-level="3.1.23" data-path="1023.html">
+    <a href="1023.html"><b>3.1.23.</b> 面试题 1023</a>
+</li>
+<li class="chapter" data-level="3.1.24" data-path="1024.html">
+    <a href="1024.html"><b>3.1.24.</b> 面试题 1024</a>
+</li>
+<li class="chapter" data-level="3.1.25" data-path="1025.html">
+    <a href="1025.html"><b>3.1.25.</b> 面试题 1025</a>
+</li>
+<li class="chapter" data-level="3.1.26" data-path="1026.html">
+    <a href="1026.html"><b>3.1.26.</b> 面试题 1026</a>
+</li>
+<li class="chapter" data-level="3.1.27" data-path="1027.html">
+    <a href="1027.html"><b>3.1.27.</b> 面试题 1027</a>
+</li>
+<li class="chapter" data-level="3.1.28" data-path="1028.html">
+    <a href="1028.html"><b>3.1.28.</b> 面试题 1028</a>
+</li>
+<li class="chapter" data-level="3.1.29" data-path="1029.html">
+    <a href="1029.html"><b>3.1.29.</b> 面试题 1029</a>
+</li>
+<li class="chapter" data-level="3.1.30" data-path="1030.html">
+    <a href="1030.html"><b>3.1.30.</b> 面试题 1030</a>
+</li>
+<li class="chapter" data-level="3.1.31" data-path="1031.html">
+    <a href="1031.html"><b>3.1.31.</b> 面试题 1031</a>
+</li>
+<li class="chapter" data-level="3.1.32" data-path="1032.html">
+    <a href="1032.html"><b>3.1.32.</b> 面试题 1032</a>
+</li>
+<li class="chapter" data-level="3.1.33" data-path="1033.html">
+    <a href="1033.html"><b>3.1.33.</b> 面试题 1033</a>
+</li>
+<li class="chapter" data-level="3.1.34" data-path="1034.html">
+    <a href="1034.html"><b>3.1.34.</b> 面试题 1034</a>
+</li>
+<li class="chapter" data-level="3.1.35" data-path="1035.html">
+    <a href="1035.html"><b>3.1.35.</b> 面试题 1035</a>
+</li>
+<li class="chapter" data-level="3.1.36" data-path="1036.html">
+    <a href="1036.html"><b>3.1.36.</b> 面试题 1036</a>
+</li>
+<li class="chapter" data-level="3.1.37" data-path="1037.html">
+    <a href="1037.html"><b>3.1.37.</b> 面试题 1037</a>
+</li>
+<li class="chapter" data-level="3.1.38" data-path="1038.html">
+    <a href="1038.html"><b>3.1.38.</b> 面试题 1038</a>
+</li>
+<li class="chapter" data-level="3.1.39" data-path="1039.html">
+    <a href="1039.html"><b>3.1.39.</b> 面试题 1039</a>
+</li>
+<li class="chapter" data-level="3.1.40" data-path="1040.html">
+    <a href="1040.html"><b>3.1.40.</b> 面试题 1040</a>
+</li>
+<li class="chapter" data-level="3.1.41" data-path="1041.html">
+    <a href="1041.html"><b>3.1.41.</b> 面试题 1041</a>
+</li>
+<li class="chapter" data-level="3.1.42" data-path="1042.html">
+    <a href="1042.html"><b>3.1.42.</b> 面试题 1042</a>
+</li>
+<li class="chapter" data-level="3.1.43" data-path="1043.html">
+    <a href="1043.html"><b>3.1.43.</b> 面试题 1043</a>
+</li>
+<li class="chapter" data-level="3.1.44" data-path="1044.html">
+    <a href="1044.html"><b>3.1.44.</b> 面试题 1044</a>
+</li>
+<li class="chapter" data-level="3.1.45" data-path="1045.html">
+    <a href="1045.html"><b>3.1.45.</b> 面试题 1045</a>
+</li>
+<li class="chapter" data-level="3.1.46" data-path="1046.html">
+    <a href="1046.html"><b>3.1.46.</b> 面试题 1046</a>
+</li>
+<li class="chapter" data-level="3.1.47" data-path="1047.html">
+    <a href="1047.html"><b>3.1.47.</b> 面试题 1047</a>
+</li>
+<li class="chapter" data-level="3.1.48" data-path="1048.html">
+    <a href="1048.html"><b>3.1.48.</b> 面试题 1048</a>
+</li>
+<li class="chapter" data-level="3.1.49" data-path="1049.html">
+    <a href="1049.html"><b>3.1.49.</b> 面试题 1049</a>
+</li>
+<li class="chapter" data-level="3.1.50" data-path="1050.html">
+    <a href="1050.html"><b>3.1.50.</b> 面试题 1050</a>
+</li>
+<li class="chapter" data-level="3.1.51" data-path="1051.html">
+    <a href="1051.html"><b>3.1.51.</b> 面试题 1051</a>
+</li>
+<li class="chapter" data-level="3.1.52" data-path="1052.html">
+    <a href="1052.html"><b>3.1.52.</b> 面试题 1052</a>
+</li>
+<li class="chapter" data-level="3.1.53" data-path="1053.html">
+    <a href="1053.html"><b>3.1.53.</b> 面试题 1053</a>
+</li>
+<li class="chapter" data-level="3.1.54" data-path="1054.html">
+    <a href="1054.html"><b>3.1.54.</b> 面试题 1054</a>
+</li>
+<li class="chapter" data-level="3.1.55" data-path="1055.html">
+    <a href="1055.html"><b>3.1.55.</b> 面试题 1055</a>
+</li>
+<li class="chapter" data-level="3.1.56" data-path="1056.html">
+    <a href="1056.html"><b>3.1.56.</b> 面试题 1056</a>
+</li>
+<li class="chapter" data-level="3.1.57" data-path="1057.html">
+    <a href="1057.html"><b>3.1.57.</b> 面试题 1057</a>
+</li>
+<li class="chapter" data-level="3.1.58" data-path="1058.html">
+    <a href="1058.html"><b>3.1.58.</b> 面试题 1058</a>
+</li>
+<li class="chapter" data-level="3.1.59" data-path="1059.html">
+    <a href="1059.html"><b>3.1.59.</b> 面试题 1059</a>
+</li>
+<li class="chapter" data-level="3.1.60" data-path="1060.html">
+    <a href="1060.html"><b>3.1.60.</b> 面试题 1060</a>
+</li>
+<li class="chapter" data-level="3.1.61" data-path="1061.html">
+    <a href="1061.html"><b>3.1.61.</b> 面试题 1061</a>
+</li>
+<li class="chapter" data-level="3.1.62" data-path="1062.html">
+    <a href="1062.html"><b>3.1.62.</b> 面试题 1062</a>
+</li>
+<li class="chapter" data-level="3.1.63" data-path="1063.html">
+    <a href="1063.html"><b>3.1.63.</b> 面试题 1063</a>
+</li>
+<li class="chapter" data-level="3.1.64" data-path="1064.html">
+    <a href="1064.html"><b>3.1.64.</b> 面试题 1064</a>
+</li>
+<li class="chapter" data-level="3.1.65" data-path="1065.html">
+    <a href="1065.html"><b>3.1.65.</b> 面试题 1065</a>
+</li>
+<li class="chapter" data-level="3.1.66" data-path="1066.html">
+    <a href="1066.html"><b>3.1.66.</b> 面试题 1066</a>
+</li>
+<li class="chapter" data-level="3.1.67" data-path="1067.html">
+    <a href="1067.html"><b>3.1.67.</b> 面试题 1067</a>
+</li>
+<li class="chapter active" data-level="3.1.68" data-path="1068.html">
+    <a href="1068.html"><b>3.1.68.</b> 面试题 1068</a>
+</li>
+<li class="chapter" data-level="3.1.69" data-path="1069.html">
+    <a href="1069.html"><b>3.1.69.</b> 面试题 1069</a>
+</li>
+<li class="chapter" data-level="3.1.70" data-path="1070.html">
+    <a href="1070.html"><b>3.1.70.</b> 面试题 1070</a>
+</li>
+
+    </ul>
+</li>
+<li class="header">性能测试</li><li class="chapter" data-level="4.1" data-path="0065.html">
+    <a href="0065.html"><b>4.1.</b> 面试题 0065</a>
+</li>
+<li class="chapter" data-level="4.2" data-path="0066.html">
+    <a href="0066.html"><b>4.2.</b> 面试题 0066</a>
+</li>
+<li class="chapter" data-level="4.3" data-path="0067.html">
+    <a href="0067.html"><b>4.3.</b> 面试题 0067</a>
+</li>
+<li class="chapter" data-level="4.4" data-path="0091.html">
+    <a href="0091.html"><b>4.4.</b> 面试题 0091</a>
+</li>
+<li class="chapter" data-level="4.5" data-path="0092.html">
+    <a href="0092.html"><b>4.5.</b> 面试题 0092</a>
+</li>
+<li class="chapter" data-level="4.6" data-path="0105.html">
+    <a href="0105.html"><b>4.6.</b> 面试题 0105</a>
+</li>
+<li class="header">接口测试</li><li class="chapter" data-level="5.1" data-path="0108.html">
+    <a href="0108.html"><b>5.1.</b> 面试题 0108</a>
+</li>
+<li class="chapter" data-level="5.2" data-path="0109.html">
+    <a href="0109.html"><b>5.2.</b> 面试题 0109</a>
+</li>
+<li class="chapter" data-level="5.3" data-path="0113.html">
+    <a href="0113.html"><b>5.3.</b> 面试题 0113</a>
+</li>
+<li class="chapter" data-level="5.4" data-path="0115.html">
+    <a href="0115.html"><b>5.4.</b> 面试题 0115</a>
+</li>
+<li class="chapter" data-level="5.5" data-path="0116.html">
+    <a href="0116.html"><b>5.5.</b> 面试题 0116</a>
+</li>
+<li class="header">Linux</li><li class="chapter" data-level="6.1" data-path="0123.html">
+    <a href="0123.html"><b>6.1.</b> 面试题 0123</a>
+</li>
+<li class="chapter" data-level="6.2" data-path="0110.html">
+    <a href="0110.html"><b>6.2.</b> 面试题 0110</a>
+</li>
+<li class="chapter" data-level="6.3" data-path="0112.html">
+    <a href="0112.html"><b>6.3.</b> 面试题 0112</a>
+</li>
+<li class="header">数据库</li><li class="chapter" data-level="7.1" data-path="0120.html">
+    <a href="0120.html"><b>7.1.</b> 面试题 0120</a>
+</li>
+<li class="chapter" data-level="7.2" data-path="0121.html">
+    <a href="0121.html"><b>7.2.</b> 面试题 0121</a>
+</li>
+<li class="chapter" data-level="7.3" data-path="0122.html">
+    <a href="0122.html"><b>7.3.</b> 面试题 0122</a>
+</li>
+<li class="header">简历</li><li class="chapter" data-level="8.1" data-path="简历/index.html">
+    <a href="简历/index.html"><b>8.1.</b> 简历</a>
+    <ul class="articles">
+    <li class="chapter" data-level="8.1.1" data-path="简历/简历格式.html">
+    <a href="简历/简历格式.html"><b>8.1.1.</b> 格式</a>
+</li>
+<li class="chapter" data-level="8.1.2" data-path="简历/专业技能.html">
+    <a href="简历/专业技能.html"><b>8.1.2.</b> 专业技能</a>
+</li>
+<li class="chapter" data-level="8.1.3" data-path="简历/岗位职责.html">
+    <a href="简历/岗位职责.html"><b>8.1.3.</b> 岗位职责</a>
+</li>
+
+    </ul>
+</li>
+
+            <li class="divider"></li>
+            <li>
+                <a class="lsbook-link" href="https://github.com/liushilive/lsbook" target="blank">
+                    本书使用 LsBook 发布
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="book-body">
+    <div class="body-inner">
+    <div class="book-header" role="navigation">
+        <!-- Title -->
+        <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i>
+            <a href="..">面试题 1068</a>
+        </h1>
+    </div>
+
+    <div class="page-wrapper" role="main" tabindex="-1">
+        <div class="page-inner">
+            <div class="search-plus" id="book-search-results">
+                <div class="search-noresults">
+                    <section class="normal markdown-section">
+                        <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>题目</a></li></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
+                        <h1 id="anchor_1"><a name="anchor_1" class="anchor-navigation-ex-anchor" href="#anchor_1"><i class="fa fa-link" aria-hidden="true"></i></a>题目</h1><p>说出使用软件测试工具和自动化的一些好处。</p>
+<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx0"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx0"><div class="panel-body">
+
+<p>它们可以加快执行测试用例的时间；能够提高软件测试员的效率，从而留出更多的时间进行测试计划和测试用例开发。它们精确且不会懈怠。</p>
+</div></div></div></sec>
+                        <footer class="page-footer"><span class="copyright">© 2019 刘士. 
+All rights reserved.</span><span class="footer-modification">
+<span id="busuanzi_container_site_uv" style="display:none">本站访客数 <span id="busuanzi_value_site_uv">
+</span> 人次</span></span></footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script>
+
+</script>
+                    </section>
+                </div>
+                <div class="search-results">
+                    <div class="has-results">
+                        <h1 class="search-results-title"><span class='search-results-count'></span> 结果匹配 "<span class='search-query'></span>"</h1>
+                        <ul class="search-results-list"></ul>
+                    </div>
+                    <div class="no-results">
+                        <h1 class="search-results-title">没有匹配的结果 "<span class='search-query'></span>"</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a aria-label="Previous page: 面试题 1067" class="navigation navigation-prev" href="1067.html">
+    <i class="fa fa-angle-left"></i>
+</a>
+
+
+<a aria-label="Next page: 面试题 1069" class="navigation navigation-next" href="1069.html">
+    <i class="fa fa-angle-right"></i>
+</a>
+
+
+</div>
+<script>
+    var lsbook = lsbook || [];
+    lsbook.push(function () {
+        lsbook.page.hasChanged({
+            "config": {
+                "github_url":"https://liushilive.github.io/",
+                "language": "zh-cn"
+            },
+            "basePath": "..",
+            "js": {}
+        });
+    });
+</script>
+</div>
+
+<script src="..\../asserts/lsbook/jquery-3.3.1.min.js"></script>
+<script charset="UTF-8" src="..\../asserts/lsbook/jquery_mar/jquery.mark.js"></script>
+<script src="..\../asserts/lsbook/lightbox/js/lightbox.min.js"></script>
+<script src="..\../asserts/lsbook/lsbook.min.js"></script>
+
+</body>
+</html>
