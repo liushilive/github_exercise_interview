@@ -260,7 +260,7 @@
 <p>详细的描述一次测试用例设计的完整的过程。</p>
 <sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><p>就说最近的这次网站功能的测试吧</p><p>首先：得到相关文档（需求文档和设计文档），理解需求和设计设计思想后，想好测试策略（测试计划简单点就 OK 了），考虑到测试环境，测试用例，测试时间等问题。</p><p>第二步：设计测试用例，测试策略是：把网站部分的功能点测试完，然后在进行系统测试（另外个模块呢有另一个测试人员负责，可以进行联调测试），网站模块的测试基本是功能测试和界面测试（用户并发的可能性很小，所以不考虑）：这次的网站的输入数据呢是使用数据库中的某张表记录，如果表中某一数据记录中新加进来的（还没有被处理的，有个标志位），网站启动后会立刻去刷那张表，得到多条数据，然后在进行处理。处理过程中，会经历 3 个步骤，网站才算完成了它的任务。有 3 个步骤呢，就可以分别对这 3 个步骤进行测试用例的设计，尽量覆盖到各种输入情况（包括数据库中的数据，用户的输入等），得出了差不多 50 个用例。界面测试，也就是用户看的到的地方，包括发送的邮件和用户填写资料的页面展示。</p><p>第三步：搭建测试环境（为什么这个时候考虑测试环境呢？因为我对网站环境已经很熟了，只有有机器能空于下来做该功能测试就可以做了），因为网站本身的环境搭建和其他的系统有点不同，它需要的测试环境比较麻烦，需要 web 服务器（Apache,tomcat），不过这次需求呢，网站部分只用到了 tomcat，所以只要有 tomcat 即可</p><p>第四步：执行测试</p></div></div></div></sec>
 
-                        <footer class="page-footer"><span class="copyright">© 2019 刘士. 
+                        <footer class="page-footer"><span class="copyright">© 2020 刘士. 
 All rights reserved.</span><span class="footer-modification">
 <span id="busuanzi_container_site_uv" style="display:none">本站访客数 <span id="busuanzi_value_site_uv">
 </span> 人次</span></span></footer>
