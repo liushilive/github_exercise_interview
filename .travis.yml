@@ -20,6 +20,6 @@ branches:
     - master
 env:
   global:
-    - REF=gitee.com/liushilive/liushilive.git
+    - REF=gitee.com/liushilive/github_exercise_interview.git
 before_install:
 - export TZ='Asia/Shanghai'
