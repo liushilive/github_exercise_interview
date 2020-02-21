@@ -1,0 +1,25 @@
+dist: xenial
+language: python
+python:
+  - "3.7"
+# command to install dependencies
+install:
+# command to run tests
+script:
+  - ls -al
+addons:
+  ssh_known_hosts:
+  - gitee.com
+after_success:
+  - git init
+  - git add .
+  - git commit -m "Updated By Travis-CI With Build ${TRAVIS_BUILD_NUMBER} For Github Pages"
+  - git push --force "https://liushilive:${travis_ci_password_gitee}@${REF}" master:master
+branches:
+  only:
+    - master
+env:
+  global:
+    - REF=gitee.com/liushilive/liushilive.git
+before_install:
+- export TZ='Asia/Shanghai'
