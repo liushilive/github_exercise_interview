@@ -290,12 +290,17 @@
 <p>你们自动化脚本怎么运行的</p>
 <sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><p>我们采用 CI 持续集成运行代码，CI 服务器为 Linux 服务器部署 Jenkins，运行浏览器的机器为 Windows，因此应用了 Selenium GRID 服务器。</p><p>在指定机器上开启 Selenium HUB，运行浏览器机器上开启 Selenium NODE 并注册到 HUB 中。</p><p>配置 Jenkins 任务，设置日程表来定时运行：CI 服务器会自动从源代码管理服务器 SVN 中拉取最新测试源代码，并运行。</p><p>运行结束后，Jenkins 会收集测试运行后的报告并归档，通过 Jenkins 即可查看测试报告，并分析。如果出现测试异常，将尝试手动复现问题，并记录 BUG，如果为脚本问题，将修正脚本。整理报告后发送邮件通知团队。</p></div></div></div></sec>
 
-                        <footer class="page-footer"><span class="copyright">© 2020 刘士. 
-All rights reserved.</span><span class="footer-modification">
+                        <footer class="page-footer">
+<span class="copyright">© 2020 刘士. All rights reserved.</span>
+<span class="footer-modification">
 <span id="busuanzi_container_site_uv" style="display:none">本站访客数 <span id="busuanzi_value_site_uv">
-</span> 人次</span></span></footer>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script>
+</span> 人次</span></span>
+</footer><script>
+function busuanzi(){
+    if (document.domain != "127.0.0.1") {$.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");}
+}
+setTimeout('busuanzi()', 2000);
+</script><script>
 
 </script>
                     </section>
