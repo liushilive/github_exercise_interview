@@ -331,7 +331,11 @@
                 <div class="search-noresults">
                     <section class="normal markdown-section">
                         <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>题目</a></li></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
-                        <h1 id="anchor_1"><a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1"><i aria-hidden="true" class="fa fa-link"></i></a>题目</h1>
+                        <h1 id="anchor_1">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>题目
+</h1>
 <p>使用索引查询一定能提高查询的性能吗？</p>
 <sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><p>通常，通过索引查询数据比全表扫描快。但是也需要注意它的代价：</p><ul>
 <li>索引需要空间来存储，也需要定期维护，每当有记录在表中增删改，索引本身也会被修改，这意味着需要付出额外的磁盘 I/O。因为索引需要额外的存储空间和处理，那些不必要的索引反而会使查询反应时间变慢。</li>
