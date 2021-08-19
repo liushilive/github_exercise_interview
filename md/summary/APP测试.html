@@ -1,0 +1,695 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>软件测试面试汇总 - APP 测试</title>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="" name="description">
+<meta content="刘士" name="author">
+
+<link href="../../../asserts/lsbook/less/website.css" rel="stylesheet">
+<link href="../../../asserts/lsbook/katex/katex.min.css" rel="stylesheet">
+<link href="../../../asserts/lsbook/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+<meta content="true" name="HandheldFriendly"/>
+<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<link href="../../../asserts/lsbook/images/apple-touch-icon-precomposed-152.png"
+      rel="apple-touch-icon-precomposed" sizes="152x152">
+<link href="../../../asserts/lsbook/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<!--分页-->
+<link href="管理工具.html" rel="next"/>
+</head>
+<body>
+<div class="book match-braces"><div class="book-summary">
+    <div id="book-search-input" role="search">
+        <input placeholder="输入并搜索" type="text"/>
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            <li class="header" title="Summary">Summary</li>
+<ul class="articles"><li class="chapter" data-level="1.1" data-path="../../index.html"><a href="../../index.html" title="介绍"><b>1.1.</b>介绍</a></li></ul>
+<li class="header" title="测试理论">测试理论</li>
+<ul class="articles"><li class="chapter" data-level="2.1" data-path="测试基础.html"><a href="测试基础.html" title="测试基础"><b>2.1.</b>测试基础</a></li>
+<li class="chapter" data-level="2.2" data-path="需求分析.html"><a href="需求分析.html" title="需求分析"><b>2.2.</b>需求分析</a></li>
+<li class="chapter" data-level="2.3" data-path="测试模型.html"><a href="测试模型.html" title="测试模型"><b>2.3.</b>测试模型</a></li>
+<li class="chapter" data-level="2.4" data-path="测试计划.html"><a href="测试计划.html" title="测试计划"><b>2.4.</b>测试计划</a></li>
+<li class="chapter" data-level="2.5" data-path="测试策略.html"><a href="测试策略.html" title="测试策略"><b>2.5.</b>测试策略</a></li>
+<li class="chapter" data-level="2.6" data-path="测试类型.html"><a href="测试类型.html" title="测试类型"><b>2.6.</b>测试类型</a></li>
+<li class="chapter" data-level="2.7" data-path="测试流程.html"><a href="测试流程.html" title="测试流程"><b>2.7.</b>测试流程</a></li>
+<li class="chapter" data-level="2.8" data-path="用例设计.html"><a href="用例设计.html" title="用例设计"><b>2.8.</b>用例设计</a></li>
+<li class="chapter" data-level="2.9" data-path="缺陷bug.html"><a href="缺陷bug.html" title="缺陷 bug"><b>2.9.</b>缺陷 bug</a></li>
+<li class="chapter" data-level="2.10" data-path="测试案例.html"><a href="测试案例.html" title="测试案例"><b>2.10.</b>测试案例</a></li></ul>
+<li class="header" title="Linux 基础">Linux 基础</li>
+<ul class="articles"><li class="chapter" data-level="3.1" data-path="Linux基础.html"><a href="Linux基础.html" title="Linux 基础"><b>3.1.</b>Linux 基础</a></li></ul>
+<li class="header" title="MySQL 基础">MySQL 基础</li>
+<ul class="articles"><li class="chapter" data-level="4.1" data-path="基础知识.html"><a href="基础知识.html" title="基础知识"><b>4.1.</b>基础知识</a></li></ul>
+<li class="header" title="Web 测试">Web 测试</li>
+<ul class="articles"><li class="chapter" data-level="5.1" data-path="web测试.html"><a href="web测试.html" title="web 测试"><b>5.1.</b>web 测试</a></li></ul>
+<li class="header" title="API 测试">API 测试</li>
+<ul class="articles"><li class="chapter" data-level="6.1" data-path="API测试.html"><a href="API测试.html" title="API 测试"><b>6.1.</b>API 测试</a></li></ul>
+<li class="header" title="App 测试">App 测试</li>
+<ul class="articles"><li class="chapter active" data-level="7.1" data-path="APP测试.html"><a href="APP测试.html" title="APP 测试"><b>7.1.</b>APP 测试</a></li></ul>
+<li class="header" title="管理工具">管理工具</li>
+<ul class="articles"><li class="chapter" data-level="8.1" data-path="管理工具.html"><a href="管理工具.html" title="管理工具"><b>8.1.</b>管理工具</a></li></ul>
+<li class="header" title="Python 基础">Python 基础</li>
+<ul class="articles"><li class="chapter" data-level="9.1" data-path="Python基础.html"><a href="Python基础.html" title="Python 基础"><b>9.1.</b>Python 基础</a></li>
+<li class="chapter" data-level="9.2" data-path="输入与输出.html"><a href="输入与输出.html" title="输入与输出"><b>9.2.</b>输入与输出</a></li>
+<li class="chapter" data-level="9.3" data-path="条件与循环.html"><a href="条件与循环.html" title="条件与循环"><b>9.3.</b>条件与循环</a></li>
+<li class="chapter" data-level="9.4" data-path="字典.html"><a href="字典.html" title="字典"><b>9.4.</b>字典</a></li>
+<li class="chapter" data-level="9.5" data-path="字符串.html"><a href="字符串.html" title="字符串"><b>9.5.</b>字符串</a></li>
+<li class="chapter" data-level="9.6" data-path="列表.html"><a href="列表.html" title="列表"><b>9.6.</b>列表</a></li>
+<li class="chapter" data-level="9.7" data-path="元组.html"><a href="元组.html" title="元组"><b>9.7.</b>元组</a></li>
+<li class="chapter" data-level="9.8" data-path="集合.html"><a href="集合.html" title="集合"><b>9.8.</b>集合</a></li>
+<li class="chapter" data-level="9.9" data-path="文件操作.html"><a href="文件操作.html" title="文件操作"><b>9.9.</b>文件操作</a></li>
+<li class="chapter" data-level="9.10" data-path="函数.html"><a href="函数.html" title="函数"><b>9.10.</b>函数</a></li>
+<li class="chapter" data-level="9.11" data-path="内建函数.html"><a href="内建函数.html" title="内建函数"><b>9.11.</b>内建函数</a></li>
+<li class="chapter" data-level="9.12" data-path="Lambda.html"><a href="Lambda.html" title="Lambda"><b>9.12.</b>Lambda</a></li>
+<li class="chapter" data-level="9.13" data-path="面向对象.html"><a href="面向对象.html" title="面向对象"><b>9.13.</b>面向对象</a></li>
+<li class="chapter" data-level="9.14" data-path="正则表达式.html"><a href="正则表达式.html" title="正则表达式"><b>9.14.</b>正则表达式</a></li>
+<li class="chapter" data-level="9.15" data-path="异常.html"><a href="异常.html" title="异常"><b>9.15.</b>异常</a></li>
+<li class="chapter" data-level="9.16" data-path="模块和包.html"><a href="模块和包.html" title="模块和包"><b>9.16.</b>模块和包</a></li>
+<li class="chapter" data-level="9.17" data-path="Python特性.html"><a href="Python特性.html" title="Python 特性"><b>9.17.</b>Python 特性</a></li>
+<li class="chapter" data-level="9.18" data-path="Python2与Python3的区别.html"><a href="Python2与Python3的区别.html" title="Python2 与 Python3 的区别"><b>9.18.</b>Python2 与 Python3 的区别</a></li></ul>
+<li class="header" title="Selenium 相关">Selenium 相关</li>
+<ul class="articles"><li class="chapter" data-level="10.1" data-path="Selenium基础.html"><a href="Selenium基础.html" title="Selenium 基础"><b>10.1.</b>Selenium 基础</a></li></ul>
+<li class="header" title="性能测试">性能测试</li>
+<ul class="articles"><li class="chapter" data-level="11.1" data-path="性能测试基础.html"><a href="性能测试基础.html" title="性能测试基础"><b>11.1.</b>性能测试基础</a></li></ul>
+<li class="header" title="LordRunner 相关">LordRunner 相关</li>
+<ul class="articles"><li class="chapter" data-level="12.1" data-path="LordRunner相关.html"><a href="LordRunner相关.html" title="LordRunner 相关"><b>12.1.</b>LordRunner 相关</a></li></ul>
+<li class="header" title="计算机网络">计算机网络</li>
+<ul class="articles"><li class="chapter" data-level="13.1" data-path="计算机网络基础.html"><a href="计算机网络基础.html" title="计算机网络基础"><b>13.1.</b>计算机网络基础</a></li></ul>
+<li class="header" title="组成原理">组成原理</li>
+<ul class="articles"><li class="chapter" data-level="14.1" data-path="组成原理.html"><a href="组成原理.html" title="组成原理"><b>14.1.</b>组成原理</a></li></ul>
+<li class="header" title="数据结构与算法">数据结构与算法</li>
+<ul class="articles"><li class="chapter" data-level="15.1" data-path="数据结构与算法.html"><a href="数据结构与算法.html" title="数据结构与算法"><b>15.1.</b>数据结构与算法</a></li></ul>
+<li class="header" title="逻辑题">逻辑题</li>
+<ul class="articles"><li class="chapter" data-level="16.1" data-path="逻辑题.html"><a href="逻辑题.html" title="逻辑题"><b>16.1.</b>逻辑题</a></li></ul>
+<li class="header" title="人力资源">人力资源</li>
+<ul class="articles"><li class="chapter" data-level="17.1" data-path="人力资源.html"><a href="人力资源.html" title="人力资源"><b>17.1.</b>人力资源</a></li>
+<li class="chapter" data-level="17.2" data-path="其他.html"><a href="其他.html" title="其他"><b>17.2.</b>其他</a></li></ul>
+<li class="header" title="常规面试题">常规面试题</li>
+<ul class="articles"><li class="chapter" data-level="18.1" data-path="../常规面试题/index.html"><a href="../常规面试题/index.html" title="常规面试题"><b>18.1.</b>常规面试题</a>
+<ul class="articles"><li class="chapter" data-level="18.1.1" data-path="../常规面试题/0001.html"><a href="../常规面试题/0001.html" title="面试题 0001"><b>18.1.1.</b>面试题 0001</a></li>
+<li class="chapter" data-level="18.1.2" data-path="../常规面试题/0002.html"><a href="../常规面试题/0002.html" title="面试题 0002"><b>18.1.2.</b>面试题 0002</a></li>
+<li class="chapter" data-level="18.1.3" data-path="../常规面试题/0003.html"><a href="../常规面试题/0003.html" title="面试题 0003"><b>18.1.3.</b>面试题 0003</a></li>
+<li class="chapter" data-level="18.1.4" data-path="../常规面试题/0004.html"><a href="../常规面试题/0004.html" title="面试题 0004"><b>18.1.4.</b>面试题 0004</a></li>
+<li class="chapter" data-level="18.1.5" data-path="../常规面试题/0005.html"><a href="../常规面试题/0005.html" title="面试题 0005"><b>18.1.5.</b>面试题 0005</a></li>
+<li class="chapter" data-level="18.1.6" data-path="../常规面试题/0006.html"><a href="../常规面试题/0006.html" title="面试题 0006"><b>18.1.6.</b>面试题 0006</a></li>
+<li class="chapter" data-level="18.1.7" data-path="../常规面试题/0007.html"><a href="../常规面试题/0007.html" title="面试题 0007"><b>18.1.7.</b>面试题 0007</a></li>
+<li class="chapter" data-level="18.1.8" data-path="../常规面试题/0008.html"><a href="../常规面试题/0008.html" title="面试题 0008"><b>18.1.8.</b>面试题 0008</a></li>
+<li class="chapter" data-level="18.1.9" data-path="../常规面试题/0009.html"><a href="../常规面试题/0009.html" title="面试题 0009"><b>18.1.9.</b>面试题 0009</a></li>
+<li class="chapter" data-level="18.1.10" data-path="../常规面试题/0010.html"><a href="../常规面试题/0010.html" title="面试题 0010"><b>18.1.10.</b>面试题 0010</a></li>
+<li class="chapter" data-level="18.1.11" data-path="../常规面试题/0011.html"><a href="../常规面试题/0011.html" title="面试题 0011"><b>18.1.11.</b>面试题 0011</a></li>
+<li class="chapter" data-level="18.1.12" data-path="../常规面试题/0012.html"><a href="../常规面试题/0012.html" title="面试题 0012"><b>18.1.12.</b>面试题 0012</a></li>
+<li class="chapter" data-level="18.1.13" data-path="../常规面试题/0013.html"><a href="../常规面试题/0013.html" title="面试题 0013"><b>18.1.13.</b>面试题 0013</a></li>
+<li class="chapter" data-level="18.1.14" data-path="../常规面试题/0014.html"><a href="../常规面试题/0014.html" title="面试题 0014"><b>18.1.14.</b>面试题 0014</a></li>
+<li class="chapter" data-level="18.1.15" data-path="../常规面试题/0015.html"><a href="../常规面试题/0015.html" title="面试题 0015"><b>18.1.15.</b>面试题 0015</a></li>
+<li class="chapter" data-level="18.1.16" data-path="../常规面试题/0016.html"><a href="../常规面试题/0016.html" title="面试题 0016"><b>18.1.16.</b>面试题 0016</a></li>
+<li class="chapter" data-level="18.1.17" data-path="../常规面试题/0017.html"><a href="../常规面试题/0017.html" title="面试题 0017"><b>18.1.17.</b>面试题 0017</a></li>
+<li class="chapter" data-level="18.1.18" data-path="../常规面试题/0018.html"><a href="../常规面试题/0018.html" title="面试题 0018"><b>18.1.18.</b>面试题 0018</a></li>
+<li class="chapter" data-level="18.1.19" data-path="../常规面试题/0019.html"><a href="../常规面试题/0019.html" title="面试题 0019"><b>18.1.19.</b>面试题 0019</a></li>
+<li class="chapter" data-level="18.1.20" data-path="../常规面试题/0020.html"><a href="../常规面试题/0020.html" title="面试题 0020"><b>18.1.20.</b>面试题 0020</a></li>
+<li class="chapter" data-level="18.1.21" data-path="../常规面试题/0021.html"><a href="../常规面试题/0021.html" title="面试题 0021"><b>18.1.21.</b>面试题 0021</a></li>
+<li class="chapter" data-level="18.1.22" data-path="../常规面试题/0022.html"><a href="../常规面试题/0022.html" title="面试题 0022"><b>18.1.22.</b>面试题 0022</a></li>
+<li class="chapter" data-level="18.1.23" data-path="../常规面试题/0023.html"><a href="../常规面试题/0023.html" title="面试题 0023"><b>18.1.23.</b>面试题 0023</a></li>
+<li class="chapter" data-level="18.1.24" data-path="../常规面试题/0024.html"><a href="../常规面试题/0024.html" title="面试题 0024"><b>18.1.24.</b>面试题 0024</a></li>
+<li class="chapter" data-level="18.1.25" data-path="../常规面试题/0025.html"><a href="../常规面试题/0025.html" title="面试题 0025"><b>18.1.25.</b>面试题 0025</a></li>
+<li class="chapter" data-level="18.1.26" data-path="../常规面试题/0026.html"><a href="../常规面试题/0026.html" title="面试题 0026"><b>18.1.26.</b>面试题 0026</a></li>
+<li class="chapter" data-level="18.1.27" data-path="../常规面试题/0027.html"><a href="../常规面试题/0027.html" title="面试题 0027"><b>18.1.27.</b>面试题 0027</a></li>
+<li class="chapter" data-level="18.1.28" data-path="../常规面试题/0028.html"><a href="../常规面试题/0028.html" title="面试题 0028"><b>18.1.28.</b>面试题 0028</a></li>
+<li class="chapter" data-level="18.1.29" data-path="../常规面试题/0029.html"><a href="../常规面试题/0029.html" title="面试题 0029"><b>18.1.29.</b>面试题 0029</a></li>
+<li class="chapter" data-level="18.1.30" data-path="../常规面试题/0030.html"><a href="../常规面试题/0030.html" title="面试题 0030"><b>18.1.30.</b>面试题 0030</a></li>
+<li class="chapter" data-level="18.1.31" data-path="../常规面试题/0031.html"><a href="../常规面试题/0031.html" title="面试题 0031"><b>18.1.31.</b>面试题 0031</a></li>
+<li class="chapter" data-level="18.1.32" data-path="../常规面试题/0032.html"><a href="../常规面试题/0032.html" title="面试题 0032"><b>18.1.32.</b>面试题 0032</a></li>
+<li class="chapter" data-level="18.1.33" data-path="../常规面试题/0033.html"><a href="../常规面试题/0033.html" title="面试题 0033"><b>18.1.33.</b>面试题 0033</a></li>
+<li class="chapter" data-level="18.1.34" data-path="../常规面试题/0034.html"><a href="../常规面试题/0034.html" title="面试题 0034"><b>18.1.34.</b>面试题 0034</a></li>
+<li class="chapter" data-level="18.1.35" data-path="../常规面试题/0035.html"><a href="../常规面试题/0035.html" title="面试题 0035"><b>18.1.35.</b>面试题 0035</a></li>
+<li class="chapter" data-level="18.1.36" data-path="../常规面试题/0036.html"><a href="../常规面试题/0036.html" title="面试题 0036"><b>18.1.36.</b>面试题 0036</a></li>
+<li class="chapter" data-level="18.1.37" data-path="../常规面试题/0037.html"><a href="../常规面试题/0037.html" title="面试题 0037"><b>18.1.37.</b>面试题 0037</a></li>
+<li class="chapter" data-level="18.1.38" data-path="../常规面试题/0038.html"><a href="../常规面试题/0038.html" title="面试题 0038"><b>18.1.38.</b>面试题 0038</a></li>
+<li class="chapter" data-level="18.1.39" data-path="../常规面试题/0039.html"><a href="../常规面试题/0039.html" title="面试题 0039"><b>18.1.39.</b>面试题 0039</a></li>
+<li class="chapter" data-level="18.1.40" data-path="../常规面试题/0040.html"><a href="../常规面试题/0040.html" title="面试题 0040"><b>18.1.40.</b>面试题 0040</a></li>
+<li class="chapter" data-level="18.1.41" data-path="../常规面试题/0041.html"><a href="../常规面试题/0041.html" title="面试题 0041"><b>18.1.41.</b>面试题 0041</a></li>
+<li class="chapter" data-level="18.1.42" data-path="../常规面试题/0042.html"><a href="../常规面试题/0042.html" title="面试题 0042"><b>18.1.42.</b>面试题 0042</a></li>
+<li class="chapter" data-level="18.1.43" data-path="../常规面试题/0043.html"><a href="../常规面试题/0043.html" title="面试题 0043"><b>18.1.43.</b>面试题 0043</a></li>
+<li class="chapter" data-level="18.1.44" data-path="../常规面试题/0044.html"><a href="../常规面试题/0044.html" title="面试题 0044"><b>18.1.44.</b>面试题 0044</a></li>
+<li class="chapter" data-level="18.1.45" data-path="../常规面试题/0045.html"><a href="../常规面试题/0045.html" title="面试题 0045"><b>18.1.45.</b>面试题 0045</a></li>
+<li class="chapter" data-level="18.1.46" data-path="../常规面试题/0046.html"><a href="../常规面试题/0046.html" title="面试题 0046"><b>18.1.46.</b>面试题 0046</a></li>
+<li class="chapter" data-level="18.1.47" data-path="../常规面试题/0047.html"><a href="../常规面试题/0047.html" title="面试题 0047"><b>18.1.47.</b>面试题 0047</a></li>
+<li class="chapter" data-level="18.1.48" data-path="../常规面试题/0048.html"><a href="../常规面试题/0048.html" title="面试题 0048"><b>18.1.48.</b>面试题 0048</a></li>
+<li class="chapter" data-level="18.1.49" data-path="../常规面试题/0049.html"><a href="../常规面试题/0049.html" title="面试题 0049"><b>18.1.49.</b>面试题 0049</a></li>
+<li class="chapter" data-level="18.1.50" data-path="../常规面试题/0050.html"><a href="../常规面试题/0050.html" title="面试题 0050"><b>18.1.50.</b>面试题 0050</a></li>
+<li class="chapter" data-level="18.1.51" data-path="../常规面试题/0051.html"><a href="../常规面试题/0051.html" title="面试题 0051"><b>18.1.51.</b>面试题 0051</a></li>
+<li class="chapter" data-level="18.1.52" data-path="../常规面试题/0052.html"><a href="../常规面试题/0052.html" title="面试题 0052"><b>18.1.52.</b>面试题 0052</a></li>
+<li class="chapter" data-level="18.1.53" data-path="../常规面试题/0053.html"><a href="../常规面试题/0053.html" title="面试题 0053"><b>18.1.53.</b>面试题 0053</a></li>
+<li class="chapter" data-level="18.1.54" data-path="../常规面试题/0054.html"><a href="../常规面试题/0054.html" title="面试题 0054"><b>18.1.54.</b>面试题 0054</a></li>
+<li class="chapter" data-level="18.1.55" data-path="../常规面试题/0055.html"><a href="../常规面试题/0055.html" title="面试题 0055"><b>18.1.55.</b>面试题 0055</a></li>
+<li class="chapter" data-level="18.1.56" data-path="../常规面试题/0056.html"><a href="../常规面试题/0056.html" title="面试题 0056"><b>18.1.56.</b>面试题 0056</a></li>
+<li class="chapter" data-level="18.1.57" data-path="../常规面试题/0057.html"><a href="../常规面试题/0057.html" title="面试题 0057"><b>18.1.57.</b>面试题 0057</a></li>
+<li class="chapter" data-level="18.1.58" data-path="../常规面试题/0058.html"><a href="../常规面试题/0058.html" title="面试题 0058"><b>18.1.58.</b>面试题 0058</a></li>
+<li class="chapter" data-level="18.1.59" data-path="../常规面试题/0059.html"><a href="../常规面试题/0059.html" title="面试题 0059"><b>18.1.59.</b>面试题 0059</a></li>
+<li class="chapter" data-level="18.1.60" data-path="../常规面试题/0060.html"><a href="../常规面试题/0060.html" title="面试题 0060"><b>18.1.60.</b>面试题 0060</a></li>
+<li class="chapter" data-level="18.1.61" data-path="../常规面试题/0061.html"><a href="../常规面试题/0061.html" title="面试题 0061"><b>18.1.61.</b>面试题 0061</a></li>
+<li class="chapter" data-level="18.1.62" data-path="../常规面试题/0062.html"><a href="../常规面试题/0062.html" title="面试题 0062"><b>18.1.62.</b>面试题 0062</a></li>
+<li class="chapter" data-level="18.1.63" data-path="../常规面试题/0063.html"><a href="../常规面试题/0063.html" title="面试题 0063"><b>18.1.63.</b>面试题 0063</a></li>
+<li class="chapter" data-level="18.1.64" data-path="../常规面试题/0064.html"><a href="../常规面试题/0064.html" title="面试题 0064"><b>18.1.64.</b>面试题 0064</a></li>
+<li class="chapter" data-level="18.1.65" data-path="../常规面试题/0065.html"><a href="../常规面试题/0065.html" title="面试题 0065"><b>18.1.65.</b>面试题 0065</a></li>
+<li class="chapter" data-level="18.1.66" data-path="../常规面试题/0066.html"><a href="../常规面试题/0066.html" title="面试题 0066"><b>18.1.66.</b>面试题 0066</a></li>
+<li class="chapter" data-level="18.1.67" data-path="../常规面试题/0067.html"><a href="../常规面试题/0067.html" title="面试题 0067"><b>18.1.67.</b>面试题 0067</a></li>
+<li class="chapter" data-level="18.1.68" data-path="../常规面试题/0068.html"><a href="../常规面试题/0068.html" title="面试题 0068"><b>18.1.68.</b>面试题 0068</a></li>
+<li class="chapter" data-level="18.1.69" data-path="../常规面试题/0069.html"><a href="../常规面试题/0069.html" title="面试题 0069"><b>18.1.69.</b>面试题 0069</a></li>
+<li class="chapter" data-level="18.1.70" data-path="../常规面试题/0070.html"><a href="../常规面试题/0070.html" title="面试题 0070"><b>18.1.70.</b>面试题 0070</a></li>
+<li class="chapter" data-level="18.1.71" data-path="../常规面试题/0071.html"><a href="../常规面试题/0071.html" title="面试题 0071"><b>18.1.71.</b>面试题 0071</a></li>
+<li class="chapter" data-level="18.1.72" data-path="../常规面试题/0072.html"><a href="../常规面试题/0072.html" title="面试题 0072"><b>18.1.72.</b>面试题 0072</a></li>
+<li class="chapter" data-level="18.1.73" data-path="../常规面试题/0073.html"><a href="../常规面试题/0073.html" title="面试题 0073"><b>18.1.73.</b>面试题 0073</a></li>
+<li class="chapter" data-level="18.1.74" data-path="../常规面试题/0074.html"><a href="../常规面试题/0074.html" title="面试题 0074"><b>18.1.74.</b>面试题 0074</a></li>
+<li class="chapter" data-level="18.1.75" data-path="../常规面试题/0075.html"><a href="../常规面试题/0075.html" title="面试题 0075"><b>18.1.75.</b>面试题 0075</a></li>
+<li class="chapter" data-level="18.1.76" data-path="../常规面试题/0076.html"><a href="../常规面试题/0076.html" title="面试题 0076"><b>18.1.76.</b>面试题 0076</a></li>
+<li class="chapter" data-level="18.1.77" data-path="../常规面试题/0077.html"><a href="../常规面试题/0077.html" title="面试题 0077"><b>18.1.77.</b>面试题 0077</a></li>
+<li class="chapter" data-level="18.1.78" data-path="../常规面试题/0078.html"><a href="../常规面试题/0078.html" title="面试题 0078"><b>18.1.78.</b>面试题 0078</a></li>
+<li class="chapter" data-level="18.1.79" data-path="../常规面试题/0079.html"><a href="../常规面试题/0079.html" title="面试题 0079"><b>18.1.79.</b>面试题 0079</a></li>
+<li class="chapter" data-level="18.1.80" data-path="../常规面试题/0080.html"><a href="../常规面试题/0080.html" title="面试题 0080"><b>18.1.80.</b>面试题 0080</a></li>
+<li class="chapter" data-level="18.1.81" data-path="../常规面试题/0081.html"><a href="../常规面试题/0081.html" title="面试题 0081"><b>18.1.81.</b>面试题 0081</a></li>
+<li class="chapter" data-level="18.1.82" data-path="../常规面试题/0082.html"><a href="../常规面试题/0082.html" title="面试题 0082"><b>18.1.82.</b>面试题 0082</a></li>
+<li class="chapter" data-level="18.1.83" data-path="../常规面试题/0083.html"><a href="../常规面试题/0083.html" title="面试题 0083"><b>18.1.83.</b>面试题 0083</a></li>
+<li class="chapter" data-level="18.1.84" data-path="../常规面试题/0084.html"><a href="../常规面试题/0084.html" title="面试题 0084"><b>18.1.84.</b>面试题 0084</a></li>
+<li class="chapter" data-level="18.1.85" data-path="../常规面试题/0085.html"><a href="../常规面试题/0085.html" title="面试题 0084"><b>18.1.85.</b>面试题 0084</a></li>
+<li class="chapter" data-level="18.1.86" data-path="../常规面试题/0086.html"><a href="../常规面试题/0086.html" title="面试题 0084"><b>18.1.86.</b>面试题 0084</a></li>
+<li class="chapter" data-level="18.1.87" data-path="../常规面试题/0087.html"><a href="../常规面试题/0087.html" title="面试题 0084"><b>18.1.87.</b>面试题 0084</a></li>
+<li class="chapter" data-level="18.1.88" data-path="../常规面试题/0088.html"><a href="../常规面试题/0088.html" title="面试题 0084"><b>18.1.88.</b>面试题 0084</a></li>
+<li class="chapter" data-level="18.1.89" data-path="../常规面试题/0089.html"><a href="../常规面试题/0089.html" title="面试题 0084"><b>18.1.89.</b>面试题 0084</a></li>
+<li class="chapter" data-level="18.1.90" data-path="../常规面试题/0090.html"><a href="../常规面试题/0090.html" title="面试题 0084"><b>18.1.90.</b>面试题 0084</a></li>
+<li class="chapter" data-level="18.1.91" data-path="../常规面试题/0091.html"><a href="../常规面试题/0091.html" title="面试题 0084"><b>18.1.91.</b>面试题 0084</a></li>
+<li class="chapter" data-level="18.1.92" data-path="../常规面试题/0092.html"><a href="../常规面试题/0092.html" title="面试题 0084"><b>18.1.92.</b>面试题 0084</a></li>
+<li class="chapter" data-level="18.1.93" data-path="../常规面试题/0093.html"><a href="../常规面试题/0093.html" title="面试题 0084"><b>18.1.93.</b>面试题 0084</a></li>
+<li class="chapter" data-level="18.1.94" data-path="../常规面试题/0094.html"><a href="../常规面试题/0094.html" title="面试题 0084"><b>18.1.94.</b>面试题 0084</a></li>
+<li class="chapter" data-level="18.1.95" data-path="../常规面试题/0095.html"><a href="../常规面试题/0095.html" title="面试题 0095"><b>18.1.95.</b>面试题 0095</a></li>
+<li class="chapter" data-level="18.1.96" data-path="../常规面试题/0096.html"><a href="../常规面试题/0096.html" title="面试题 0096"><b>18.1.96.</b>面试题 0096</a></li>
+<li class="chapter" data-level="18.1.97" data-path="../常规面试题/0097.html"><a href="../常规面试题/0097.html" title="面试题 0097"><b>18.1.97.</b>面试题 0097</a></li>
+<li class="chapter" data-level="18.1.98" data-path="../常规面试题/0098.html"><a href="../常规面试题/0098.html" title="面试题 0098"><b>18.1.98.</b>面试题 0098</a></li>
+<li class="chapter" data-level="18.1.99" data-path="../常规面试题/0099.html"><a href="../常规面试题/0099.html" title="面试题 0099"><b>18.1.99.</b>面试题 0099</a></li>
+<li class="chapter" data-level="18.1.100" data-path="../常规面试题/0100.html"><a href="../常规面试题/0100.html" title="面试题 0100"><b>18.1.100.</b>面试题 0100</a></li>
+<li class="chapter" data-level="18.1.101" data-path="../常规面试题/0101.html"><a href="../常规面试题/0101.html" title="面试题 0101"><b>18.1.101.</b>面试题 0101</a></li></ul></li></ul>
+<li class="header" title="自动化面试题">自动化面试题</li>
+<ul class="articles"><li class="chapter" data-level="19.1" data-path="../自动化面试题/index.html"><a href="../自动化面试题/index.html" title="自动化面试题"><b>19.1.</b>自动化面试题</a>
+<ul class="articles"><li class="chapter" data-level="19.1.1" data-path="../自动化面试题/1001.html"><a href="../自动化面试题/1001.html" title="面试题 0001"><b>19.1.1.</b>面试题 0001</a></li>
+<li class="chapter" data-level="19.1.2" data-path="../自动化面试题/1002.html"><a href="../自动化面试题/1002.html" title="面试题 0002"><b>19.1.2.</b>面试题 0002</a></li>
+<li class="chapter" data-level="19.1.3" data-path="../自动化面试题/1003.html"><a href="../自动化面试题/1003.html" title="面试题 0003"><b>19.1.3.</b>面试题 0003</a></li>
+<li class="chapter" data-level="19.1.4" data-path="../自动化面试题/1004.html"><a href="../自动化面试题/1004.html" title="面试题 0004"><b>19.1.4.</b>面试题 0004</a></li>
+<li class="chapter" data-level="19.1.5" data-path="../自动化面试题/1005.html"><a href="../自动化面试题/1005.html" title="面试题 0005"><b>19.1.5.</b>面试题 0005</a></li>
+<li class="chapter" data-level="19.1.6" data-path="../自动化面试题/1006.html"><a href="../自动化面试题/1006.html" title="面试题 0006"><b>19.1.6.</b>面试题 0006</a></li>
+<li class="chapter" data-level="19.1.7" data-path="../自动化面试题/1007.html"><a href="../自动化面试题/1007.html" title="面试题 0007"><b>19.1.7.</b>面试题 0007</a></li>
+<li class="chapter" data-level="19.1.8" data-path="../自动化面试题/1008.html"><a href="../自动化面试题/1008.html" title="面试题 0008"><b>19.1.8.</b>面试题 0008</a></li>
+<li class="chapter" data-level="19.1.9" data-path="../自动化面试题/1009.html"><a href="../自动化面试题/1009.html" title="面试题 0009"><b>19.1.9.</b>面试题 0009</a></li>
+<li class="chapter" data-level="19.1.10" data-path="../自动化面试题/1010.html"><a href="../自动化面试题/1010.html" title="面试题 0010"><b>19.1.10.</b>面试题 0010</a></li>
+<li class="chapter" data-level="19.1.11" data-path="../自动化面试题/1011.html"><a href="../自动化面试题/1011.html" title="面试题 0011"><b>19.1.11.</b>面试题 0011</a></li>
+<li class="chapter" data-level="19.1.12" data-path="../自动化面试题/1012.html"><a href="../自动化面试题/1012.html" title="面试题 0012"><b>19.1.12.</b>面试题 0012</a></li>
+<li class="chapter" data-level="19.1.13" data-path="../自动化面试题/1013.html"><a href="../自动化面试题/1013.html" title="面试题 0013"><b>19.1.13.</b>面试题 0013</a></li>
+<li class="chapter" data-level="19.1.14" data-path="../自动化面试题/1014.html"><a href="../自动化面试题/1014.html" title="面试题 0014"><b>19.1.14.</b>面试题 0014</a></li>
+<li class="chapter" data-level="19.1.15" data-path="../自动化面试题/1015.html"><a href="../自动化面试题/1015.html" title="面试题 0015"><b>19.1.15.</b>面试题 0015</a></li>
+<li class="chapter" data-level="19.1.16" data-path="../自动化面试题/1016.html"><a href="../自动化面试题/1016.html" title="面试题 0016"><b>19.1.16.</b>面试题 0016</a></li>
+<li class="chapter" data-level="19.1.17" data-path="../自动化面试题/1017.html"><a href="../自动化面试题/1017.html" title="面试题 0017"><b>19.1.17.</b>面试题 0017</a></li>
+<li class="chapter" data-level="19.1.18" data-path="../自动化面试题/1018.html"><a href="../自动化面试题/1018.html" title="面试题 0018"><b>19.1.18.</b>面试题 0018</a></li>
+<li class="chapter" data-level="19.1.19" data-path="../自动化面试题/1019.html"><a href="../自动化面试题/1019.html" title="面试题 0019"><b>19.1.19.</b>面试题 0019</a></li>
+<li class="chapter" data-level="19.1.20" data-path="../自动化面试题/1020.html"><a href="../自动化面试题/1020.html" title="面试题 0020"><b>19.1.20.</b>面试题 0020</a></li>
+<li class="chapter" data-level="19.1.21" data-path="../自动化面试题/1021.html"><a href="../自动化面试题/1021.html" title="面试题 0021"><b>19.1.21.</b>面试题 0021</a></li>
+<li class="chapter" data-level="19.1.22" data-path="../自动化面试题/1022.html"><a href="../自动化面试题/1022.html" title="面试题 0022"><b>19.1.22.</b>面试题 0022</a></li>
+<li class="chapter" data-level="19.1.23" data-path="../自动化面试题/1023.html"><a href="../自动化面试题/1023.html" title="面试题 0023"><b>19.1.23.</b>面试题 0023</a></li>
+<li class="chapter" data-level="19.1.24" data-path="../自动化面试题/1024.html"><a href="../自动化面试题/1024.html" title="面试题 0024"><b>19.1.24.</b>面试题 0024</a></li>
+<li class="chapter" data-level="19.1.25" data-path="../自动化面试题/1025.html"><a href="../自动化面试题/1025.html" title="面试题 0025"><b>19.1.25.</b>面试题 0025</a></li>
+<li class="chapter" data-level="19.1.26" data-path="../自动化面试题/1026.html"><a href="../自动化面试题/1026.html" title="面试题 0026"><b>19.1.26.</b>面试题 0026</a></li>
+<li class="chapter" data-level="19.1.27" data-path="../自动化面试题/1027.html"><a href="../自动化面试题/1027.html" title="面试题 0027"><b>19.1.27.</b>面试题 0027</a></li>
+<li class="chapter" data-level="19.1.28" data-path="../自动化面试题/1028.html"><a href="../自动化面试题/1028.html" title="面试题 0028"><b>19.1.28.</b>面试题 0028</a></li>
+<li class="chapter" data-level="19.1.29" data-path="../自动化面试题/1029.html"><a href="../自动化面试题/1029.html" title="面试题 0029"><b>19.1.29.</b>面试题 0029</a></li>
+<li class="chapter" data-level="19.1.30" data-path="../自动化面试题/1030.html"><a href="../自动化面试题/1030.html" title="面试题 0030"><b>19.1.30.</b>面试题 0030</a></li>
+<li class="chapter" data-level="19.1.31" data-path="../自动化面试题/1031.html"><a href="../自动化面试题/1031.html" title="面试题 0031"><b>19.1.31.</b>面试题 0031</a></li>
+<li class="chapter" data-level="19.1.32" data-path="../自动化面试题/1032.html"><a href="../自动化面试题/1032.html" title="面试题 0032"><b>19.1.32.</b>面试题 0032</a></li>
+<li class="chapter" data-level="19.1.33" data-path="../自动化面试题/1033.html"><a href="../自动化面试题/1033.html" title="面试题 0033"><b>19.1.33.</b>面试题 0033</a></li>
+<li class="chapter" data-level="19.1.34" data-path="../自动化面试题/1034.html"><a href="../自动化面试题/1034.html" title="面试题 0034"><b>19.1.34.</b>面试题 0034</a></li>
+<li class="chapter" data-level="19.1.35" data-path="../自动化面试题/1035.html"><a href="../自动化面试题/1035.html" title="面试题 0035"><b>19.1.35.</b>面试题 0035</a></li>
+<li class="chapter" data-level="19.1.36" data-path="../自动化面试题/1036.html"><a href="../自动化面试题/1036.html" title="面试题 0036"><b>19.1.36.</b>面试题 0036</a></li>
+<li class="chapter" data-level="19.1.37" data-path="../自动化面试题/1037.html"><a href="../自动化面试题/1037.html" title="面试题 0037"><b>19.1.37.</b>面试题 0037</a></li>
+<li class="chapter" data-level="19.1.38" data-path="../自动化面试题/1038.html"><a href="../自动化面试题/1038.html" title="面试题 0038"><b>19.1.38.</b>面试题 0038</a></li>
+<li class="chapter" data-level="19.1.39" data-path="../自动化面试题/1039.html"><a href="../自动化面试题/1039.html" title="面试题 0039"><b>19.1.39.</b>面试题 0039</a></li>
+<li class="chapter" data-level="19.1.40" data-path="../自动化面试题/1040.html"><a href="../自动化面试题/1040.html" title="面试题 0040"><b>19.1.40.</b>面试题 0040</a></li>
+<li class="chapter" data-level="19.1.41" data-path="../自动化面试题/1041.html"><a href="../自动化面试题/1041.html" title="面试题 0041"><b>19.1.41.</b>面试题 0041</a></li>
+<li class="chapter" data-level="19.1.42" data-path="../自动化面试题/1042.html"><a href="../自动化面试题/1042.html" title="面试题 0042"><b>19.1.42.</b>面试题 0042</a></li>
+<li class="chapter" data-level="19.1.43" data-path="../自动化面试题/1043.html"><a href="../自动化面试题/1043.html" title="面试题 0043"><b>19.1.43.</b>面试题 0043</a></li>
+<li class="chapter" data-level="19.1.44" data-path="../自动化面试题/1044.html"><a href="../自动化面试题/1044.html" title="面试题 0044"><b>19.1.44.</b>面试题 0044</a></li>
+<li class="chapter" data-level="19.1.45" data-path="../自动化面试题/1045.html"><a href="../自动化面试题/1045.html" title="面试题 0045"><b>19.1.45.</b>面试题 0045</a></li>
+<li class="chapter" data-level="19.1.46" data-path="../自动化面试题/1046.html"><a href="../自动化面试题/1046.html" title="面试题 0046"><b>19.1.46.</b>面试题 0046</a></li>
+<li class="chapter" data-level="19.1.47" data-path="../自动化面试题/1047.html"><a href="../自动化面试题/1047.html" title="面试题 0047"><b>19.1.47.</b>面试题 0047</a></li>
+<li class="chapter" data-level="19.1.48" data-path="../自动化面试题/1048.html"><a href="../自动化面试题/1048.html" title="面试题 0048"><b>19.1.48.</b>面试题 0048</a></li>
+<li class="chapter" data-level="19.1.49" data-path="../自动化面试题/1049.html"><a href="../自动化面试题/1049.html" title="面试题 0049"><b>19.1.49.</b>面试题 0049</a></li>
+<li class="chapter" data-level="19.1.50" data-path="../自动化面试题/1050.html"><a href="../自动化面试题/1050.html" title="面试题 0050"><b>19.1.50.</b>面试题 0050</a></li>
+<li class="chapter" data-level="19.1.51" data-path="../自动化面试题/1051.html"><a href="../自动化面试题/1051.html" title="面试题 0051"><b>19.1.51.</b>面试题 0051</a></li>
+<li class="chapter" data-level="19.1.52" data-path="../自动化面试题/1052.html"><a href="../自动化面试题/1052.html" title="面试题 0052"><b>19.1.52.</b>面试题 0052</a></li>
+<li class="chapter" data-level="19.1.53" data-path="../自动化面试题/1053.html"><a href="../自动化面试题/1053.html" title="面试题 0053"><b>19.1.53.</b>面试题 0053</a></li>
+<li class="chapter" data-level="19.1.54" data-path="../自动化面试题/1054.html"><a href="../自动化面试题/1054.html" title="面试题 0054"><b>19.1.54.</b>面试题 0054</a></li>
+<li class="chapter" data-level="19.1.55" data-path="../自动化面试题/1055.html"><a href="../自动化面试题/1055.html" title="面试题 0055"><b>19.1.55.</b>面试题 0055</a></li>
+<li class="chapter" data-level="19.1.56" data-path="../自动化面试题/1056.html"><a href="../自动化面试题/1056.html" title="面试题 0056"><b>19.1.56.</b>面试题 0056</a></li>
+<li class="chapter" data-level="19.1.57" data-path="../自动化面试题/1057.html"><a href="../自动化面试题/1057.html" title="面试题 0057"><b>19.1.57.</b>面试题 0057</a></li>
+<li class="chapter" data-level="19.1.58" data-path="../自动化面试题/1058.html"><a href="../自动化面试题/1058.html" title="面试题 0058"><b>19.1.58.</b>面试题 0058</a></li>
+<li class="chapter" data-level="19.1.59" data-path="../自动化面试题/1059.html"><a href="../自动化面试题/1059.html" title="面试题 0059"><b>19.1.59.</b>面试题 0059</a></li>
+<li class="chapter" data-level="19.1.60" data-path="../自动化面试题/1060.html"><a href="../自动化面试题/1060.html" title="面试题 0060"><b>19.1.60.</b>面试题 0060</a></li>
+<li class="chapter" data-level="19.1.61" data-path="../自动化面试题/1061.html"><a href="../自动化面试题/1061.html" title="面试题 0061"><b>19.1.61.</b>面试题 0061</a></li>
+<li class="chapter" data-level="19.1.62" data-path="../自动化面试题/1062.html"><a href="../自动化面试题/1062.html" title="面试题 0062"><b>19.1.62.</b>面试题 0062</a></li>
+<li class="chapter" data-level="19.1.63" data-path="../自动化面试题/1063.html"><a href="../自动化面试题/1063.html" title="面试题 0063"><b>19.1.63.</b>面试题 0063</a></li>
+<li class="chapter" data-level="19.1.64" data-path="../自动化面试题/1064.html"><a href="../自动化面试题/1064.html" title="面试题 0064"><b>19.1.64.</b>面试题 0064</a></li>
+<li class="chapter" data-level="19.1.65" data-path="../自动化面试题/1065.html"><a href="../自动化面试题/1065.html" title="面试题 0065"><b>19.1.65.</b>面试题 0065</a></li>
+<li class="chapter" data-level="19.1.66" data-path="../自动化面试题/1066.html"><a href="../自动化面试题/1066.html" title="面试题 0066"><b>19.1.66.</b>面试题 0066</a></li>
+<li class="chapter" data-level="19.1.67" data-path="../自动化面试题/1067.html"><a href="../自动化面试题/1067.html" title="面试题 0067"><b>19.1.67.</b>面试题 0067</a></li>
+<li class="chapter" data-level="19.1.68" data-path="../自动化面试题/1068.html"><a href="../自动化面试题/1068.html" title="面试题 0068"><b>19.1.68.</b>面试题 0068</a></li>
+<li class="chapter" data-level="19.1.69" data-path="../自动化面试题/1069.html"><a href="../自动化面试题/1069.html" title="面试题 0069"><b>19.1.69.</b>面试题 0069</a></li>
+<li class="chapter" data-level="19.1.70" data-path="../自动化面试题/1070.html"><a href="../自动化面试题/1070.html" title="面试题 0070"><b>19.1.70.</b>面试题 0070</a></li>
+<li class="chapter" data-level="19.1.71" data-path="../自动化面试题/1071.html"><a href="../自动化面试题/1071.html" title="面试题 0071"><b>19.1.71.</b>面试题 0071</a></li></ul></li></ul>
+<li class="header" title="性能测试">性能测试</li>
+<ul class="articles"><li class="chapter" data-level="20.1" data-path="../性能测试/index.html"><a href="../性能测试/index.html" title="性能测试面试题"><b>20.1.</b>性能测试面试题</a>
+<ul class="articles"><li class="chapter" data-level="20.1.1" data-path="../性能测试/0001.html"><a href="../性能测试/0001.html" title="面试题 0001"><b>20.1.1.</b>面试题 0001</a></li>
+<li class="chapter" data-level="20.1.2" data-path="../性能测试/0002.html"><a href="../性能测试/0002.html" title="面试题 0002"><b>20.1.2.</b>面试题 0002</a></li>
+<li class="chapter" data-level="20.1.3" data-path="../性能测试/0003.html"><a href="../性能测试/0003.html" title="面试题 0003"><b>20.1.3.</b>面试题 0003</a></li>
+<li class="chapter" data-level="20.1.4" data-path="../性能测试/0004.html"><a href="../性能测试/0004.html" title="面试题 0004"><b>20.1.4.</b>面试题 0004</a></li>
+<li class="chapter" data-level="20.1.5" data-path="../性能测试/0005.html"><a href="../性能测试/0005.html" title="面试题 0005"><b>20.1.5.</b>面试题 0005</a></li>
+<li class="chapter" data-level="20.1.6" data-path="../性能测试/0006.html"><a href="../性能测试/0006.html" title="面试题 0006"><b>20.1.6.</b>面试题 0006</a></li>
+<li class="chapter" data-level="20.1.7" data-path="../性能测试/0007.html"><a href="../性能测试/0007.html" title="面试题 0007"><b>20.1.7.</b>面试题 0007</a></li>
+<li class="chapter" data-level="20.1.8" data-path="../性能测试/0008.html"><a href="../性能测试/0008.html" title="面试题 0008"><b>20.1.8.</b>面试题 0008</a></li></ul></li></ul>
+<li class="header" title="接口测试">接口测试</li>
+<ul class="articles"><li class="chapter" data-level="21.1" data-path="../接口测试/index.html"><a href="../接口测试/index.html" title="接口测试面试题"><b>21.1.</b>接口测试面试题</a>
+<ul class="articles"><li class="chapter" data-level="21.1.1" data-path="../接口测试/0001.html"><a href="../接口测试/0001.html" title="面试题 0001"><b>21.1.1.</b>面试题 0001</a></li>
+<li class="chapter" data-level="21.1.2" data-path="../接口测试/0002.html"><a href="../接口测试/0002.html" title="面试题 0002"><b>21.1.2.</b>面试题 0002</a></li>
+<li class="chapter" data-level="21.1.3" data-path="../接口测试/0003.html"><a href="../接口测试/0003.html" title="面试题 0003"><b>21.1.3.</b>面试题 0003</a></li>
+<li class="chapter" data-level="21.1.4" data-path="../接口测试/0004.html"><a href="../接口测试/0004.html" title="面试题 0004"><b>21.1.4.</b>面试题 0004</a></li>
+<li class="chapter" data-level="21.1.5" data-path="../接口测试/0005.html"><a href="../接口测试/0005.html" title="面试题 0005"><b>21.1.5.</b>面试题 0005</a></li>
+<li class="chapter" data-level="21.1.6" data-path="../接口测试/0006.html"><a href="../接口测试/0006.html" title="面试题 0006"><b>21.1.6.</b>面试题 0006</a></li>
+<li class="chapter" data-level="21.1.7" data-path="../接口测试/0007.html"><a href="../接口测试/0007.html" title="面试题 0007"><b>21.1.7.</b>面试题 0007</a></li>
+<li class="chapter" data-level="21.1.8" data-path="../接口测试/0008.html"><a href="../接口测试/0008.html" title="面试题 0008"><b>21.1.8.</b>面试题 0008</a></li>
+<li class="chapter" data-level="21.1.9" data-path="../接口测试/0009.html"><a href="../接口测试/0009.html" title="面试题 0009"><b>21.1.9.</b>面试题 0009</a></li>
+<li class="chapter" data-level="21.1.10" data-path="../接口测试/0010.html"><a href="../接口测试/0010.html" title="面试题 0010"><b>21.1.10.</b>面试题 0010</a></li>
+<li class="chapter" data-level="21.1.11" data-path="../接口测试/0011.html"><a href="../接口测试/0011.html" title="面试题 0011"><b>21.1.11.</b>面试题 0011</a></li>
+<li class="chapter" data-level="21.1.12" data-path="../接口测试/0012.html"><a href="../接口测试/0012.html" title="面试题 0012"><b>21.1.12.</b>面试题 0012</a></li>
+<li class="chapter" data-level="21.1.13" data-path="../接口测试/0013.html"><a href="../接口测试/0013.html" title="面试题 0013"><b>21.1.13.</b>面试题 0013</a></li>
+<li class="chapter" data-level="21.1.14" data-path="../接口测试/0014.html"><a href="../接口测试/0014.html" title="面试题 0014"><b>21.1.14.</b>面试题 0014</a></li>
+<li class="chapter" data-level="21.1.15" data-path="../接口测试/0015.html"><a href="../接口测试/0015.html" title="面试题 0015"><b>21.1.15.</b>面试题 0015</a></li></ul></li></ul>
+<li class="header" title="Linux">Linux</li>
+<ul class="articles"><li class="chapter" data-level="22.1" data-path="../Linux/index.html"><a href="../Linux/index.html" title="Linux 面试题"><b>22.1.</b>Linux 面试题</a>
+<ul class="articles"><li class="chapter" data-level="22.1.1" data-path="../Linux/0001.html"><a href="../Linux/0001.html" title="面试题 0001"><b>22.1.1.</b>面试题 0001</a></li>
+<li class="chapter" data-level="22.1.2" data-path="../Linux/0002.html"><a href="../Linux/0002.html" title="面试题 0002"><b>22.1.2.</b>面试题 0002</a></li>
+<li class="chapter" data-level="22.1.3" data-path="../Linux/0003.html"><a href="../Linux/0003.html" title="面试题 0003"><b>22.1.3.</b>面试题 0003</a></li>
+<li class="chapter" data-level="22.1.4" data-path="../Linux/0004.html"><a href="../Linux/0004.html" title="面试题 0004"><b>22.1.4.</b>面试题 0004</a></li>
+<li class="chapter" data-level="22.1.5" data-path="../Linux/0005.html"><a href="../Linux/0005.html" title="面试题 0005"><b>22.1.5.</b>面试题 0005</a></li>
+<li class="chapter" data-level="22.1.6" data-path="../Linux/0006.html"><a href="../Linux/0006.html" title="面试题 0006"><b>22.1.6.</b>面试题 0006</a></li>
+<li class="chapter" data-level="22.1.7" data-path="../Linux/0007.html"><a href="../Linux/0007.html" title="面试题 0007"><b>22.1.7.</b>面试题 0007</a></li>
+<li class="chapter" data-level="22.1.8" data-path="../Linux/0008.html"><a href="../Linux/0008.html" title="面试题 0008"><b>22.1.8.</b>面试题 0008</a></li>
+<li class="chapter" data-level="22.1.9" data-path="../Linux/0009.html"><a href="../Linux/0009.html" title="面试题 0009"><b>22.1.9.</b>面试题 0009</a></li>
+<li class="chapter" data-level="22.1.10" data-path="../Linux/0010.html"><a href="../Linux/0010.html" title="面试题 0010"><b>22.1.10.</b>面试题 0010</a></li>
+<li class="chapter" data-level="22.1.11" data-path="../Linux/0011.html"><a href="../Linux/0011.html" title="面试题 0011"><b>22.1.11.</b>面试题 0011</a></li>
+<li class="chapter" data-level="22.1.12" data-path="../Linux/0012.html"><a href="../Linux/0012.html" title="面试题 0012"><b>22.1.12.</b>面试题 0012</a></li>
+<li class="chapter" data-level="22.1.13" data-path="../Linux/0013.html"><a href="../Linux/0013.html" title="面试题 0013"><b>22.1.13.</b>面试题 0013</a></li>
+<li class="chapter" data-level="22.1.14" data-path="../Linux/0014.html"><a href="../Linux/0014.html" title="面试题 0014"><b>22.1.14.</b>面试题 0014</a></li>
+<li class="chapter" data-level="22.1.15" data-path="../Linux/0015.html"><a href="../Linux/0015.html" title="面试题 0015"><b>22.1.15.</b>面试题 0015</a></li>
+<li class="chapter" data-level="22.1.16" data-path="../Linux/0016.html"><a href="../Linux/0016.html" title="面试题 0016"><b>22.1.16.</b>面试题 0016</a></li>
+<li class="chapter" data-level="22.1.17" data-path="../Linux/0017.html"><a href="../Linux/0017.html" title="面试题 0017"><b>22.1.17.</b>面试题 0017</a></li>
+<li class="chapter" data-level="22.1.18" data-path="../Linux/0018.html"><a href="../Linux/0018.html" title="面试题 0018"><b>22.1.18.</b>面试题 0018</a></li>
+<li class="chapter" data-level="22.1.19" data-path="../Linux/0019.html"><a href="../Linux/0019.html" title="面试题 0019"><b>22.1.19.</b>面试题 0019</a></li>
+<li class="chapter" data-level="22.1.20" data-path="../Linux/0020.html"><a href="../Linux/0020.html" title="面试题 0020"><b>22.1.20.</b>面试题 0020</a></li>
+<li class="chapter" data-level="22.1.21" data-path="../Linux/0021.html"><a href="../Linux/0021.html" title="面试题 0021"><b>22.1.21.</b>面试题 0021</a></li>
+<li class="chapter" data-level="22.1.22" data-path="../Linux/0022.html"><a href="../Linux/0022.html" title="面试题 0022"><b>22.1.22.</b>面试题 0022</a></li>
+<li class="chapter" data-level="22.1.23" data-path="../Linux/0023.html"><a href="../Linux/0023.html" title="面试题 0023"><b>22.1.23.</b>面试题 0023</a></li>
+<li class="chapter" data-level="22.1.24" data-path="../Linux/0024.html"><a href="../Linux/0024.html" title="面试题 0024"><b>22.1.24.</b>面试题 0024</a></li>
+<li class="chapter" data-level="22.1.25" data-path="../Linux/0025.html"><a href="../Linux/0025.html" title="面试题 0025"><b>22.1.25.</b>面试题 0025</a></li>
+<li class="chapter" data-level="22.1.26" data-path="../Linux/0026.html"><a href="../Linux/0026.html" title="面试题 0026"><b>22.1.26.</b>面试题 0026</a></li>
+<li class="chapter" data-level="22.1.27" data-path="../Linux/0027.html"><a href="../Linux/0027.html" title="面试题 0027"><b>22.1.27.</b>面试题 0027</a></li></ul></li></ul>
+<li class="header" title="数据库">数据库</li>
+<ul class="articles"><li class="chapter" data-level="23.1" data-path="../数据库/index.html"><a href="../数据库/index.html" title="数据库面试题"><b>23.1.</b>数据库面试题</a>
+<ul class="articles"><li class="chapter" data-level="23.1.1" data-path="../数据库/0001.html"><a href="../数据库/0001.html" title="面试题 0001"><b>23.1.1.</b>面试题 0001</a></li>
+<li class="chapter" data-level="23.1.2" data-path="../数据库/0002.html"><a href="../数据库/0002.html" title="面试题 0002"><b>23.1.2.</b>面试题 0002</a></li>
+<li class="chapter" data-level="23.1.3" data-path="../数据库/0003.html"><a href="../数据库/0003.html" title="面试题 0003"><b>23.1.3.</b>面试题 0003</a></li>
+<li class="chapter" data-level="23.1.4" data-path="../数据库/0004.html"><a href="../数据库/0004.html" title="面试题 0004"><b>23.1.4.</b>面试题 0004</a></li>
+<li class="chapter" data-level="23.1.5" data-path="../数据库/0005.html"><a href="../数据库/0005.html" title="面试题 0005"><b>23.1.5.</b>面试题 0005</a></li>
+<li class="chapter" data-level="23.1.6" data-path="../数据库/0006.html"><a href="../数据库/0006.html" title="面试题 0006"><b>23.1.6.</b>面试题 0006</a></li>
+<li class="chapter" data-level="23.1.7" data-path="../数据库/0007.html"><a href="../数据库/0007.html" title="面试题 0007"><b>23.1.7.</b>面试题 0007</a></li>
+<li class="chapter" data-level="23.1.8" data-path="../数据库/0008.html"><a href="../数据库/0008.html" title="面试题 0008"><b>23.1.8.</b>面试题 0008</a></li>
+<li class="chapter" data-level="23.1.9" data-path="../数据库/0009.html"><a href="../数据库/0009.html" title="面试题 0009"><b>23.1.9.</b>面试题 0009</a></li>
+<li class="chapter" data-level="23.1.10" data-path="../数据库/0010.html"><a href="../数据库/0010.html" title="面试题 0010"><b>23.1.10.</b>面试题 0010</a></li>
+<li class="chapter" data-level="23.1.11" data-path="../数据库/0011.html"><a href="../数据库/0011.html" title="面试题 0011"><b>23.1.11.</b>面试题 0011</a></li>
+<li class="chapter" data-level="23.1.12" data-path="../数据库/0012.html"><a href="../数据库/0012.html" title="面试题 0012"><b>23.1.12.</b>面试题 0012</a></li>
+<li class="chapter" data-level="23.1.13" data-path="../数据库/0013.html"><a href="../数据库/0013.html" title="面试题 0013"><b>23.1.13.</b>面试题 0013</a></li>
+<li class="chapter" data-level="23.1.14" data-path="../数据库/0014.html"><a href="../数据库/0014.html" title="面试题 0014"><b>23.1.14.</b>面试题 0014</a></li>
+<li class="chapter" data-level="23.1.15" data-path="../数据库/0015.html"><a href="../数据库/0015.html" title="面试题 0015"><b>23.1.15.</b>面试题 0015</a></li>
+<li class="chapter" data-level="23.1.16" data-path="../数据库/0016.html"><a href="../数据库/0016.html" title="面试题 0016"><b>23.1.16.</b>面试题 0016</a></li>
+<li class="chapter" data-level="23.1.17" data-path="../数据库/0017.html"><a href="../数据库/0017.html" title="面试题 0017"><b>23.1.17.</b>面试题 0017</a></li>
+<li class="chapter" data-level="23.1.18" data-path="../数据库/0018.html"><a href="../数据库/0018.html" title="面试题 0018"><b>23.1.18.</b>面试题 0018</a></li>
+<li class="chapter" data-level="23.1.19" data-path="../数据库/0019.html"><a href="../数据库/0019.html" title="面试题 0019"><b>23.1.19.</b>面试题 0019</a></li>
+<li class="chapter" data-level="23.1.20" data-path="../数据库/0020.html"><a href="../数据库/0020.html" title="面试题 0020"><b>23.1.20.</b>面试题 0020</a></li>
+<li class="chapter" data-level="23.1.21" data-path="../数据库/0021.html"><a href="../数据库/0021.html" title="面试题 0021"><b>23.1.21.</b>面试题 0021</a></li>
+<li class="chapter" data-level="23.1.22" data-path="../数据库/0022.html"><a href="../数据库/0022.html" title="面试题 0022"><b>23.1.22.</b>面试题 0022</a></li>
+<li class="chapter" data-level="23.1.23" data-path="../数据库/0023.html"><a href="../数据库/0023.html" title="面试题 0023"><b>23.1.23.</b>面试题 0023</a></li>
+<li class="chapter" data-level="23.1.24" data-path="../数据库/0024.html"><a href="../数据库/0024.html" title="面试题 0024"><b>23.1.24.</b>面试题 0024</a></li>
+<li class="chapter" data-level="23.1.25" data-path="../数据库/0025.html"><a href="../数据库/0025.html" title="面试题 0025"><b>23.1.25.</b>面试题 0025</a></li>
+<li class="chapter" data-level="23.1.26" data-path="../数据库/0026.html"><a href="../数据库/0026.html" title="面试题 0026"><b>23.1.26.</b>面试题 0026</a></li>
+<li class="chapter" data-level="23.1.27" data-path="../数据库/0027.html"><a href="../数据库/0027.html" title="面试题 0027"><b>23.1.27.</b>面试题 0027</a></li>
+<li class="chapter" data-level="23.1.28" data-path="../数据库/0028.html"><a href="../数据库/0028.html" title="面试题 0028"><b>23.1.28.</b>面试题 0028</a></li>
+<li class="chapter" data-level="23.1.29" data-path="../数据库/0029.html"><a href="../数据库/0029.html" title="面试题 0029"><b>23.1.29.</b>面试题 0029</a></li>
+<li class="chapter" data-level="23.1.30" data-path="../数据库/0030.html"><a href="../数据库/0030.html" title="面试题 0030"><b>23.1.30.</b>面试题 0030</a></li>
+<li class="chapter" data-level="23.1.31" data-path="../数据库/0031.html"><a href="../数据库/0031.html" title="面试题 0031"><b>23.1.31.</b>面试题 0031</a></li></ul></li></ul>
+<li class="header" title="笔试题">笔试题</li>
+<ul class="articles"><li class="chapter" data-level="24.1" data-path="../笔试题/index.html"><a href="../笔试题/index.html" title="笔试题"><b>24.1.</b>笔试题</a>
+<ul class="articles"><li class="chapter" data-level="24.1.1" data-path="../笔试题/0001.html"><a href="../笔试题/0001.html" title="笔试题 0001"><b>24.1.1.</b>笔试题 0001</a></li>
+<li class="chapter" data-level="24.1.2" data-path="../笔试题/0002.html"><a href="../笔试题/0002.html" title="笔试题 0002"><b>24.1.2.</b>笔试题 0002</a></li></ul></li></ul>
+<li class="header" title="简历">简历</li>
+<ul class="articles"><li class="chapter" data-level="25.1" data-path="../简历/index.html"><a href="../简历/index.html" title="简历"><b>25.1.</b>简历</a>
+<ul class="articles"><li class="chapter" data-level="25.1.1" data-path="../简历/简历格式.html"><a href="../简历/简历格式.html" title="格式"><b>25.1.1.</b>格式</a></li>
+<li class="chapter" data-level="25.1.2" data-path="../简历/专业技能.html"><a href="../简历/专业技能.html" title="专业技能"><b>25.1.2.</b>专业技能</a></li>
+<li class="chapter" data-level="25.1.3" data-path="../简历/岗位职责.html"><a href="../简历/岗位职责.html" title="岗位职责"><b>25.1.3.</b>岗位职责</a></li></ul></li></ul>
+            <li class="divider"></li>
+            <li>
+                <a class="lsbook-link" href="https://github.com/liushilive/lsbook" target="blank">
+                    本书使用 LsBook 发布
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="book-body">
+    <div class="body-inner">
+    <div class="book-header" role="navigation">
+        <!-- Title -->
+        <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i>
+            <a href="../..">APP 测试</a>
+        </h1>
+    </div>
+
+    <div class="page-wrapper" role="main" tabindex="-1">
+        <div class="page-inner">
+            <div class="search-plus" id="book-search-results">
+                <div class="search-noresults">
+                    <section class="normal markdown-section">
+                        
+                        <p>﻿# APP 测试</p>
+<h2 id="anchor_1">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>什么是 Android 四大组件？
+</h2>
+<p>Android 的四大组件包括：Activity、Service、BroadcasReceiver、ContentProvider</p>
+<h2 id="anchor_2">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_2" name="anchor_2">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>当点击 APP 图标启动程序，说明将要发生那些过程？
+</h2>
+<ol>
+<li>点击桌面 app 图标，Launcher 进程采用 Binder IPC 向 system_server 进程发起 startActivity 请求；</li>
+<li>system_server 进程收到请求后，向 zygote 进程发送创建进程的请求（zygote 进程是 Android 系统的第一个进程，zygote 意为受精卵，所有进程都是由它孵化而来）</li>
+<li>zygote 进程 fork 出新的子进程， 即 App 进程；</li>
+<li>App 进程，通过 Binder IPC 向 system_server 进程发起 attachApplication 请求</li>
+<li>system_server 进程收到请求后， 进行一系列的准备工作， 通过 Binder IPC 向 App 进程发送 scheduleLaunchActivity 请求</li>
+<li>App 的 binder 线程（ Application Thread ） 在收到请求后，通过 handler 向主线程发送 LAUNCH_ACTIVITY 消息</li>
+<li>主线程收到 Message 后，通过发射机制创建目标 Activity，并回调 Activity.onCreate() 方法</li>
+</ol>
+<h2 id="anchor_3">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_3" name="anchor_3">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>APP 测试的内容主要包括哪些，如何开展？
+</h2>
+<p>功能测试：</p>
+<ol>
+<li>业务逻辑正确性测试：依据：产品文档 -&gt;测试用例编写</li>
+</ol>
+<p>兼容性测试：</p>
+<ol>
+<li>
+<p>系统版本：Android: 官方版本，定制版本；IOS：官方提供版本</p>
+</li>
+<li>
+<p>分辨率：720x1280、1080x1920</p>
+</li>
+<li>
+<p>网络情况：2g 3g 4g 5g Wi-Fi</p>
+</li>
+</ol>
+<p>异常测试</p>
+<ol>
+<li>
+<p>热启动应用：应用在后台长时间待机；应用在后台待机过程中，手机重启</p>
+</li>
+<li>
+<p>网络切换和中断恢复：网络切换；中断恢复：</p>
+</li>
+<li>
+<p>电话信息中断恢复 升级，安装</p>
+</li>
+</ol>
+<p>卸载测试</p>
+<ol>
+<li>
+<p>升级测试：临近版本升级 (1.0-&gt;1.1); 跨版本 (1.0-&gt;....-&gt;2.2)</p>
+</li>
+<li>
+<p>安装测试：首次安装；覆盖安装（同版本，不同版本覆盖）; 卸载后安装</p>
+</li>
+<li>
+<p>卸载测试：首次卸载；卸载安装后在卸载</p>
+</li>
+</ol>
+<p>健壮性测试</p>
+<ol>
+<li>
+<p>手机资源消耗：cpu，内存</p>
+</li>
+<li>
+<p>流量消耗：图片，数据，视频</p>
+</li>
+<li>
+<p>电量测试</p>
+</li>
+<li>
+<p>崩溃恢复</p>
+</li>
+</ol>
+<h2 id="anchor_4">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_4" name="anchor_4">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>Android 的兼容性测试都考虑哪些内容？
+</h2>
+<p>品牌机型兼容：根据市场占有率、发布时间等指标对主流、最新机型进行重点兼容</p>
+<p>ROM 兼容：需兼容原生的 ROM（2.1、2.2、2.3、4.0、4.1、4.2）；第三方 ROM（小米、百度易、点心、魅族、阿里云……）
+屏幕兼容：需兼容 HVGA、VGA、WVGA、FWVGA、720p、1080p 屏幕分辨率，并考虑不同 PPI 的情况软件兼容：安全类软件（百度手机管家、360 优化大师、360 安全卫士、QQ 手机管家、安卓优化大师、网秦、LBE），输入法软件（系统自带、Sogou、百度）
+版本兼容：服务器端需要兼容产品早期版本所需的 API 接口</p>
+<p>网络兼容：WiFi、3 大运营商的 2G,3G,4G 网络，需区分 WAP 和 NET 接入</p>
+<h2 id="anchor_5">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_5" name="anchor_5">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>针对 App 的安装功能，写出测试点？
+</h2>
+<p>安装</p>
+<ol>
+<li>正常安装测试，检查是否安装成功。</li>
+<li>APP 版本覆盖测试。例如：先安装一个 1.0 版本的 APP, 再安装一个高版本 (1.1 版本）的 APP，检查是否被覆盖。</li>
+<li>回退版本测试。例如：先装一个 2.0 版本的 APP, 再安装一个 1.0 版本的 APP, 正常情况下版本是可以回退的。</li>
+<li>安装时内存不足，弹出提示。</li>
+<li>根据安装手册操作，是否正确安装。</li>
+<li>安装过程中的意外情况（强行断电、断网、来电话了、查看信息）等等，检查会发生的情况。</li>
+<li>通过‘同步软件’，检查安装时是否同步安装了一些文件。</li>
+<li>在不同型号、系统、屏幕大小、分辨率上的手机进行安装。</li>
+<li>安装时是否识别有 SD 卡，并默认安装到 sd 卡中。</li>
+<li>安装完成后，能否正常启动应用程序。</li>
+<li>安装完成后，重启手机能否正常启动应用程序。</li>
+<li>安装完成后，是否对其他应用程序造成影响。</li>
+<li>安装完成后，能否添加快捷方式。</li>
+<li>安装完成后，杀毒软件是否会对其当做病毒处理。</li>
+<li>多进程进行安装，是否安装成功。</li>
+<li>在安装过程中，所有的提示信息必须是英文或者中文，提示信息中不能出现代码、符号、乱码等。</li>
+<li>安装之后，是否自动启动程序。</li>
+<li>是否支持第三方安装。</li>
+<li>在安装中点击取消。</li>
+</ol>
+<p>卸载</p>
+<ol>
+<li>用自己的卸载程序进行卸载，检查是否卸载干净。</li>
+<li>用第三方工具，检查是否卸载干净。</li>
+<li>在卸载过程中，点击取消按钮，看是否正常退出卸载程序，检查软件是否还能继续正常使用。</li>
+<li>卸载过程中，出现意外（比如手机关机，没电，查看信息，接打电话），程序是否还能运行。</li>
+<li>在卸载过程中，突然重启设备，再次访问程序，是否还能运行。</li>
+<li>在没用使用程序时，删除目录文件，看程序是否能运行。</li>
+<li>在使用过程中，直接删除目录文件，程序是否还能运行。</li>
+<li>不同系统、硬件环境、网络环境下进行卸载。</li>
+<li>卸载成功后，是否对其他程序有影响。</li>
+<li>卸载后再次安装，是否正常使用。</li>
+<li>在卸载过程中，所有的提示信息必须是英文或者中文，提示信息中不能出现代码、符号、乱码等。</li>
+</ol>
+<p>更新</p>
+<ol>
+<li>当客户端有新版本时，提示更新。</li>
+<li>非强制更新，可以取消更新，旧版本正常使用，下次使用软件时，仍然会出现更新提示。</li>
+<li>强制更新，强制更新而用户没有更新时，退出客户端，下次启动，依然提示更新。</li>
+<li>不卸载更新，检查是否可以更新。</li>
+<li>不卸载更新，检查资源同名文件如图片等是否更新成最新版本。</li>
+<li>非 wifi 网络下，提示是否更新，取消就加入待下载，wifi 下自动更新。</li>
+</ol>
+<h2 id="anchor_6">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_6" name="anchor_6">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>常用的 ADB 命令？
+</h2>
+<ul>
+<li>adb --help / adb : 看见帮助信息</li>
+<li>adb start-server: 启动 adb 服务</li>
+<li>adb kill-server: 关闭 adb 服务</li>
+<li>adb devices: 查看手机设备号</li>
+<li>adb push 电脑手机</li>
+<li>adb pull 手机电脑</li>
+<li>adb logcat | grep(unix) 包 名</li>
+<li>adb logcat | findstr(win) 包 名</li>
+<li>adb shell : 进入 shell 命令行，可以操作 Linux 命令</li>
+<li>adb shell dumpsys window windows | grep mFocusedApp: 获取包名 启动名 (win：adb shell dumpsys window windows | findstr mFocusedApp)</li>
+<li>adb install 路径 /apk 文件：安装 apk 到手机上</li>
+<li>adb uninstall 包名：卸载 app 从手机上</li>
+<li>adb shell am start -W 包名 / 启动名：app 启动时间</li>
+</ul>
+<h2 id="anchor_7">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_7" name="anchor_7">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>在查看 logcat 命令日志时候怎么内容保存到本地文件？
+</h2>
+<p>输出重定向：logcat &gt;&gt; log_file_name</p>
+<h2 id="anchor_8">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_8" name="anchor_8">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>App 崩溃（闪退），可能是什么原因导致的？
+</h2>
+<p>缓存垃圾过多：由于安卓系统的特性，如果长时间不清理垃圾文件。会导致越来越卡。也会出现闪退情况。</p>
+<p>运行的程序过多，导致内存不足</p>
+<p>应用版本兼容问题：如果应用版本太低，会导致不兼容，造成闪退。此外，有些新版本在调试中，也会造成应用闪退。解决方法：如果是版本太旧，更新为新版本即可；如果是新版本闪退，可能是应用 在改版调试，可卸载后安装旧版。</p>
+<p>检查 APP 中访问网络的地方，组件中的 ImageView 是否可以正常的下载并显示到 app 页面上。检查 APP 的 sdk 和手机的系统是否兼容。</p>
+<p>在一些特定情况下的闪退，比如播放视频，在 Android5.0 升级到 Android 6.0 的时候，有些系统 API 老版本有，新版本没有，到时回去对象的时候失败，报空，系统就会出现闪退问题。</p>
+<h2 id="anchor_9">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_9" name="anchor_9">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>如何测试监测 app 的内存使用、CPU 消耗、流量使用情况？
+</h2>
+<p>adb shell top</p>
+<p>Android 应用性能测试通常包括：启动时间、内存、CPU、耗电量、流量、流畅度等根据手机的使用应用频度和强度不同，可将应用使用强度分为如下几种状态：</p>
+<ul>
+<li>空闲状态：指启动应用后，不做任何操作或切换到后台运行的情况称为空闲状态，该情况为应用对 内存的消耗是最小的。</li>
+<li>中强度状态：该情况用户使用应用的强度和时间长短不确定，相对来说使用时长偏长。</li>
+<li>高强度状态：该种情况为应用内高频率的使用，用户很少达到，跑 monkey  时可认为高强度状态， 该种情况常用来测试应用内存泄漏的情况测试时，可根据用户的操作习惯模拟应用使用频率和强度等级。 使用 adb 命令，手机连接电脑开启 USB 调试模式，进入 adbshell。</li>
+</ul>
+<ol>
+<li>
+<p>查看 CPU 占用率</p>
+<p>top -m 10 -s cpu</p>
+<p>在测试过程中，QA 需要关注对应包的 cpu 占用率，反复进行某个操作，cpu 占用过高且一直无法释放，此时可能存在风险。</p>
+<p>如果你想筛选出你自己的应用的话可以用下面命令 top -d 3| grep packageName</p>
+</li>
+<li>
+<p>查看内存使用情况</p>
+<p>dumpsys meminfo &lt;package_name&gt;</p>
+<p>dumpsys meminfo &lt;package_id&gt;</p>
+</li>
+</ol>
+<p>参数含义：</p>
+<ol>
+<li>Naitve Heap Size: 从 mallinfo usmblks 获得，代表最大总共分配空间</li>
+<li>Native Heap Alloc: 从 mallinfo uorblks 获得，总共分配空间</li>
+<li>Native Heap Free: 从 mallinfo fordblks 获得，代表总共剩余空间</li>
+<li>Native Heap Size 约等于 Native Heap Alloc + Native Heap Free</li>
+<li>mallinfo 是一个 C 库， mallinfo 函数提供了各种各样的通过 C 的 malloc（）函数分配的内存的统计信息。</li>
+<li>Dalvik Heap Size: 从 Runtime totalMemory() 获得，Dalvik Heap 总共的内存大小。</li>
+<li>Dalvik Heap Alloc: Runtime totalMemory()-freeMemory() ，Dalvik Heap 分配的内存大小。</li>
+<li>Dalvik Heap Free: 从 Runtime freeMemory() 获得，Dalvik Heap 剩余的内存大小。</li>
+<li>Dalvik Heap Size 约等于 Dalvik HeapAlloc + Dalvik Heap Free 重点关注如下几个字段：</li>
+<li>Native/Dalvik 的 Heap 信息中的 alloc ：具体在上面的第一行和第二行，它分别给出的是 JNI 层和 Java 层的内存分配情况，如果发现这个值一直增长，则代表程序可能出现了内存泄漏。
+Total 的 PSS 信息：这个值就是你的应用真正占据的内存大小，通过这个信息，你可以轻松判别手机中哪些程序占内存比较大了。</li>
+</ol>
+<h2 id="anchor_10">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_10" name="anchor_10">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>弱网测试怎么测
+</h2>
+<p>弱网环境测试主要依赖于弱网环境的模拟。环境搭建方式一般有两种：软件方式和硬件方式。软件方 式的成本低，主要就是通过模拟网络参数来配置弱网环境，通常来讲可以达到测试目的。一般可通过热 点共享设置。在各类网络软件中，主要就是对带宽、丢包、延时等进行模拟弱网环境。如果要求更接 近弱网环境，  比如现在很多的专项测试，会更倾向于通过硬件方式来协助测试，但这种方式相对会麻烦很多，一般会由网维协助搭建。当然，对于有些无法模拟的情况，只能靠人工移动到例如电梯、地 铁等信号比较弱的地方。</p>
+<h2 id="anchor_11">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_11" name="anchor_11">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a><code class="language-vim">//*[contains(@text,&quot;登录&quot;)]</code>是什么意思
+</h2>
+<p>定位第一个元素 text 属性包含登录的元素</p>
+<h2 id="anchor_12">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_12" name="anchor_12">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>Appium 都有哪些启动方式
+</h2>
+<ol>
+<li>客户端启动</li>
+<li>命令行启动</li>
+</ol>
+
+                        <footer class="page-footer">
+<span class="copyright">© 2021 刘士. All rights reserved.</span>
+<span class="footer-modification">
+<span id="busuanzi_container_site_uv" style="display:none">本站访客数 <span id="busuanzi_value_site_uv">
+</span> 人次</span></span>
+</footer><script>
+function busuanzi(){
+    if (document.domain != "127.0.0.1") {$.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");}
+}
+setTimeout('busuanzi()', 2000);
+</script><script>
+
+</script>
+                    </section>
+                </div>
+                <div class="search-results">
+                    <div class="has-results">
+                        <h1 class="search-results-title"><span class='search-results-count'></span> 结果匹配 "<span class='search-query'></span>"</h1>
+                        <ul class="search-results-list"></ul>
+                    </div>
+                    <div class="no-results">
+                        <h1 class="search-results-title">没有匹配的结果 "<span class='search-query'></span>"</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a aria-label="Previous page: API 测试" class="navigation navigation-prev" href="API测试.html">
+    <i class="fa fa-angle-left"></i>
+</a>
+
+
+<a aria-label="Next page: 管理工具" class="navigation navigation-next" href="管理工具.html">
+    <i class="fa fa-angle-right"></i>
+</a>
+
+
+</div>
+<script>
+    var lsbook = lsbook || [];
+    lsbook.push(function () {
+        lsbook.page.hasChanged({
+            "config": {
+                "github_url":"https://liushilive.github.io/",
+                "language": "zh-cn",
+                "previous_page_link": "API测试.html",
+                "next_page_link": "管理工具.html"
+            },
+            "basePath": "../..",
+            "js": {'prism': ['../../../asserts/lsbook/prismjs/clipboard.min.js', '../../../asserts/lsbook/prismjs/prism.js']}
+        });
+    });
+</script>
+</div>
+
+<script src="../../../asserts/lsbook/jquery-3.3.1.min.js"></script>
+<script charset="UTF-8" src="../../../asserts/lsbook/jquery_mar/jquery.mark.js"></script>
+<script src="../../../asserts/lsbook/lightbox/js/lightbox.min.js"></script>
+<script src="../../../asserts/lsbook/lsbook.min.js"></script>
+
+</body>
+</html>
